@@ -87,7 +87,7 @@ export const python = [
     {
         id: 'python_007',
         category: 'Basics',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa acest cod?\n\nprint("Hello World")',
         correctAnswer: 'Hello World',
@@ -135,7 +135,7 @@ export const python = [
     {
         id: 'python_011',
         category: 'Basics',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nx = 10\nprint(type(x))',
         correctAnswer: '<class \'int\'>',
@@ -168,7 +168,7 @@ export const python = [
     {
         id: 'python_014',
         category: 'Basics',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(10 + 5)',
         correctAnswer: '15',
@@ -177,7 +177,7 @@ export const python = [
     {
         id: 'python_015',
         category: 'Basics',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(10 - 3)',
         correctAnswer: '7',
@@ -186,7 +186,7 @@ export const python = [
     {
         id: 'python_016',
         category: 'Basics',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(4 * 5)',
         correctAnswer: '20',
@@ -195,7 +195,7 @@ export const python = [
     {
         id: 'python_017',
         category: 'Basics',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(20 / 4)',
         correctAnswer: '5.0',
@@ -204,7 +204,7 @@ export const python = [
     {
         id: 'python_018',
         category: 'Basics',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(2 ** 3)',
         correctAnswer: '8',
@@ -213,7 +213,7 @@ export const python = [
     {
         id: 'python_019',
         category: 'Basics',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(17 % 5)',
         correctAnswer: '2',
@@ -233,7 +233,7 @@ export const python = [
     {
         id: 'python_021',
         category: 'Print și Input',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint("Python", "este", "ușor")',
         correctAnswer: 'Python este ușor',
@@ -257,7 +257,7 @@ export const python = [
     {
         id: 'python_023',
         category: 'Print și Input',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint("Linia 1")\nprint("Linia 2")',
         correctAnswer: 'Linia 1\\nLinia 2',
@@ -275,7 +275,7 @@ export const python = [
     {
         id: 'python_025',
         category: 'Print și Input',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va face acest cod?\n\nnume = input("Scrie numele: ")',
         correctAnswer: 'Afișează mesajul și așteaptă să scrii text',
@@ -299,7 +299,7 @@ export const python = [
     {
         id: 'python_027',
         category: 'Print și Input',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint("Vârstă: " + str(15))',
         correctAnswer: 'Vârstă: 15',
@@ -323,7 +323,7 @@ export const python = [
     {
         id: 'python_029',
         category: 'Print și Input',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint("A" * 3)',
         correctAnswer: 'AAA',
@@ -332,7 +332,7 @@ export const python = [
     {
         id: 'python_030',
         category: 'Print și Input',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(len("Python"))',
         correctAnswer: '6',
@@ -356,7 +356,7 @@ export const python = [
     {
         id: 'python_032',
         category: 'Print și Input',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\ntext = "python"\nprint(text.upper())',
         correctAnswer: 'PYTHON',
@@ -365,7 +365,7 @@ export const python = [
     {
         id: 'python_033',
         category: 'Print și Input',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\ntext = "PYTHON"\nprint(text.lower())',
         correctAnswer: 'python',
@@ -374,7 +374,7 @@ export const python = [
     {
         id: 'python_034',
         category: 'Print și Input',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint("Hello {}, your age is {}".format("Ana", 12))',
         correctAnswer: 'Hello Ana, your age is 12',
@@ -394,7 +394,7 @@ export const python = [
     {
         id: 'python_036',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(10 > 5)',
         correctAnswer: 'True',
@@ -403,7 +403,7 @@ export const python = [
     {
         id: 'python_037',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(10 < 5)',
         correctAnswer: 'False',
@@ -412,7 +412,7 @@ export const python = [
     {
         id: 'python_038',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(10 == 10)',
         correctAnswer: 'True',
@@ -421,7 +421,7 @@ export const python = [
     {
         id: 'python_039',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(10 != 5)',
         correctAnswer: 'True',
@@ -430,7 +430,7 @@ export const python = [
     {
         id: 'python_040',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(10 >= 10)',
         correctAnswer: 'True',
@@ -454,7 +454,7 @@ export const python = [
     {
         id: 'python_042',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(5 > 3 and 10 > 5)',
         correctAnswer: 'True',
@@ -463,7 +463,7 @@ export const python = [
     {
         id: 'python_043',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(5 > 10 or 10 > 5)',
         correctAnswer: 'True',
@@ -472,7 +472,7 @@ export const python = [
     {
         id: 'python_044',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(not True)',
         correctAnswer: 'False',
@@ -481,7 +481,7 @@ export const python = [
     {
         id: 'python_045',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(not False)',
         correctAnswer: 'True',
@@ -499,7 +499,7 @@ export const python = [
     {
         id: 'python_047',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(3 < 5 < 7)',
         correctAnswer: 'True',
@@ -523,7 +523,7 @@ export const python = [
     {
         id: 'python_049',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint("a" in "banana")',
         correctAnswer: 'True',
@@ -532,7 +532,7 @@ export const python = [
     {
         id: 'python_050',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint("x" in "banana")',
         correctAnswer: 'False',
@@ -550,7 +550,7 @@ export const python = [
     {
         id: 'python_052',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(5 and 3)',
         correctAnswer: '3',
@@ -559,7 +559,7 @@ export const python = [
     {
         id: 'python_053',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(0 or 5)',
         correctAnswer: '5',
@@ -568,7 +568,7 @@ export const python = [
     {
         id: 'python_054',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint(2 + 3 * 4)',
         correctAnswer: '14',
@@ -577,7 +577,7 @@ export const python = [
     {
         id: 'python_055',
         category: 'Operatori',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nprint((2 + 3) * 4)',
         correctAnswer: '20',
@@ -588,7 +588,7 @@ export const python = [
     {
         id: 'python_056',
         category: 'If/Else',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nif 10 > 5:\n    print("Adevărat")',
         correctAnswer: 'Adevărat',
@@ -597,7 +597,7 @@ export const python = [
     {
         id: 'python_057',
         category: 'If/Else',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nif 10 < 5:\n    print("Adevărat")\nelse:\n    print("Fals")',
         correctAnswer: 'Fals',
@@ -630,7 +630,7 @@ export const python = [
     {
         id: 'python_060',
         category: 'If/Else',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nvârstă = 15\nif vârstă >= 18:\n    print("Adult")\nelse:\n    print("Minor")',
         correctAnswer: 'Minor',
@@ -639,7 +639,7 @@ export const python = [
     {
         id: 'python_061',
         category: 'If/Else',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnume = "Ana"\nif nume == "Ana":\n    print("Salut Ana!")\nelse:\n    print("Salut necunoscut!")',
         correctAnswer: 'Salut Ana!',
@@ -648,7 +648,7 @@ export const python = [
     {
         id: 'python_062',
         category: 'If/Else',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nscor = 75\nif scor >= 90:\n    print("A")\nelif scor >= 80:\n    print("B")\nelif scor >= 70:\n    print("C")\nelse:\n    print("F")',
         correctAnswer: 'C',
@@ -672,7 +672,7 @@ export const python = [
     {
         id: 'python_064',
         category: 'If/Else',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nif 5 > 3:\n    if 4 > 2:\n        print("Ambele adevărate")',
         correctAnswer: 'Ambele adevărate',
@@ -690,7 +690,7 @@ export const python = [
     {
         id: 'python_066',
         category: 'If/Else',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nif 5:\n    print("True")\nelse:\n    print("False")',
         correctAnswer: 'True',
@@ -699,7 +699,7 @@ export const python = [
     {
         id: 'python_067',
         category: 'If/Else',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nif "":\n    print("True")\nelse:\n    print("False")',
         correctAnswer: 'False',
@@ -723,7 +723,7 @@ export const python = [
     {
         id: 'python_069',
         category: 'If/Else',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nmesaj = "Matur" if 20 > 18 else "Minor"\nprint(mesaj)',
         correctAnswer: 'Matur',
@@ -743,7 +743,7 @@ export const python = [
     {
         id: 'python_071',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor i in range(3):\n    print(i)',
         correctAnswer: '0\\n1\\n2',
@@ -767,7 +767,7 @@ export const python = [
     {
         id: 'python_073',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor i in range(1, 4):\n    print(i)',
         correctAnswer: '1\\n2\\n3',
@@ -776,7 +776,7 @@ export const python = [
     {
         id: 'python_074',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor i in range(0, 6, 2):\n    print(i)',
         correctAnswer: '0\\n2\\n4',
@@ -785,7 +785,7 @@ export const python = [
     {
         id: 'python_075',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor litera in "Python":\n    print(litera)',
         correctAnswer: 'P\\ny\\nt\\nh\\no\\nn',
@@ -794,7 +794,7 @@ export const python = [
     {
         id: 'python_076',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nsum = 0\nfor i in range(1, 4):\n    sum = sum + i\nprint(sum)',
         correctAnswer: '6',
@@ -812,7 +812,7 @@ export const python = [
     {
         id: 'python_078',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\ni = 0\nwhile i < 3:\n    print(i)\n    i += 1',
         correctAnswer: '0\\n1\\n2',
@@ -836,7 +836,7 @@ export const python = [
     {
         id: 'python_080',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor i in range(10):\n    if i == 3:\n        break\n    print(i)',
         correctAnswer: '0\\n1\\n2',
@@ -860,7 +860,7 @@ export const python = [
     {
         id: 'python_082',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor i in range(5):\n    if i == 2:\n        continue\n    print(i)',
         correctAnswer: '0\\n1\\n3\\n4',
@@ -869,7 +869,7 @@ export const python = [
     {
         id: 'python_083',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor i in range(1, 4):\n    for j in range(1, 3):\n        print(f"{i},{j}")',
         correctAnswer: '1,1\\n1,2\\n2,1\\n2,2\\n3,1\\n3,2',
@@ -902,7 +902,7 @@ export const python = [
     {
         id: 'python_086',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nfor i in range(3):\n    print(i)\nelse:\n    print("Gata!")',
         correctAnswer: '0\\n1\\n2\\nGata!',
@@ -911,7 +911,7 @@ export const python = [
     {
         id: 'python_087',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor i in range(5):\n    if i == 3:\n        break\nelse:\n    print("Gata!")',
         correctAnswer: '(gol)',
@@ -920,7 +920,7 @@ export const python = [
     {
         id: 'python_088',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor x in [1, 2, 3]:\n    print(x)',
         correctAnswer: '1\\n2\\n3',
@@ -929,7 +929,7 @@ export const python = [
     {
         id: 'python_089',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\ni = 0\nwhile True:\n    print(i)\n    i += 1\n    if i >= 3:\n        break',
         correctAnswer: '0\\n1\\n2',
@@ -953,7 +953,7 @@ export const python = [
     {
         id: 'python_091',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\ncount = 0\nfor i in range(1, 11):\n    if i % 2 == 0:\n        count += 1\nprint(count)',
         correctAnswer: '5',
@@ -962,7 +962,7 @@ export const python = [
     {
         id: 'python_092',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nsum = 0\nfor i in range(1, 6):\n    sum += i\nprint(sum)',
         correctAnswer: '15',
@@ -971,7 +971,7 @@ export const python = [
     {
         id: 'python_093',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor i in range(3):\n    print("*" * (i + 1))',
         correctAnswer: '*\\n**\\n***',
@@ -989,7 +989,7 @@ export const python = [
     {
         id: 'python_095',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor litera in "hi":\n    for cifra in "12":\n        print(litera + cifra)',
         correctAnswer: 'h1\\nh2\\ni1\\ni2',
@@ -998,7 +998,7 @@ export const python = [
     {
         id: 'python_096',
         category: 'Bucle',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nn = 5\nfor i in range(1, n + 1):\n    print(i * "*")',
         correctAnswer: '*\\n**\\n***\\n****\\n*****',
@@ -1009,7 +1009,7 @@ export const python = [
     {
         id: 'python_097',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\nprint(colors[0])',
         correctAnswer: 'roșu',
@@ -1018,7 +1018,7 @@ export const python = [
     {
         id: 'python_098',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[2])',
         correctAnswer: '3',
@@ -1027,7 +1027,7 @@ export const python = [
     {
         id: 'python_099',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\nprint(colors[-1])',
         correctAnswer: 'albastru',
@@ -1036,7 +1036,7 @@ export const python = [
     {
         id: 'python_100',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\nprint(colors[-2])',
         correctAnswer: 'verde',
@@ -1045,7 +1045,7 @@ export const python = [
     {
         id: 'python_101',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(len(numere))',
         correctAnswer: '5',
@@ -1054,7 +1054,7 @@ export const python = [
     {
         id: 'python_102',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfruit = []\nfruit.append("măr")\nprint(fruit)',
         correctAnswer: '[\'măr\']',
@@ -1063,7 +1063,7 @@ export const python = [
     {
         id: 'python_103',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.append(4)\nprint(numere)',
         correctAnswer: '[1, 2, 3, 4]',
@@ -1072,7 +1072,7 @@ export const python = [
     {
         id: 'python_104',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 2, 4]\nprint(numere.count(2))',
         correctAnswer: '2',
@@ -1081,7 +1081,7 @@ export const python = [
     {
         id: 'python_105',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere.index(3))',
         correctAnswer: '2',
@@ -1090,7 +1090,7 @@ export const python = [
     {
         id: 'python_106',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[1:3])',
         correctAnswer: '[2, 3]',
@@ -1099,7 +1099,7 @@ export const python = [
     {
         id: 'python_107',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[:3])',
         correctAnswer: '[1, 2, 3]',
@@ -1108,7 +1108,7 @@ export const python = [
     {
         id: 'python_108',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[2:])',
         correctAnswer: '[3, 4, 5]',
@@ -1117,7 +1117,7 @@ export const python = [
     {
         id: 'python_109',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nnumere[0] = 10\nprint(numere)',
         correctAnswer: '[10, 2, 3, 4, 5]',
@@ -1126,7 +1126,7 @@ export const python = [
     {
         id: 'python_110',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.remove(2)\nprint(numere)',
         correctAnswer: '[1, 3]',
@@ -1135,7 +1135,7 @@ export const python = [
     {
         id: 'python_111',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.pop()\nprint(numere)',
         correctAnswer: '[1, 2]',
@@ -1144,7 +1144,7 @@ export const python = [
     {
         id: 'python_112',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.pop(1)\nprint(numere)',
         correctAnswer: '[1, 3]',
@@ -1153,7 +1153,7 @@ export const python = [
     {
         id: 'python_113',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [3, 1, 2]\nnumere.sort()\nprint(numere)',
         correctAnswer: '[1, 2, 3]',
@@ -1162,7 +1162,7 @@ export const python = [
     {
         id: 'python_114',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\ncolors.reverse()\nprint(colors)',
         correctAnswer: '[\'albastru\', \'verde\', \'roșu\']',
@@ -1171,7 +1171,7 @@ export const python = [
     {
         id: 'python_115',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nprint(2 in numere)',
         correctAnswer: 'True',
@@ -1180,7 +1180,7 @@ export const python = [
     {
         id: 'python_116',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nfor num in [1, 2, 3]:\n    print(num)',
         correctAnswer: '1\\n2\\n3',
@@ -1189,7 +1189,7 @@ export const python = [
     {
         id: 'python_117',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\ntotal = sum(numere)\nprint(total)',
         correctAnswer: '15',
@@ -1198,7 +1198,7 @@ export const python = [
     {
         id: 'python_118',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [3, 1, 4, 1, 5]\nprint(max(numere))',
         correctAnswer: '5',
@@ -1207,7 +1207,7 @@ export const python = [
     {
         id: 'python_119',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nnumere = [3, 1, 4, 1, 5]\nprint(min(numere))',
         correctAnswer: '1',
@@ -1216,7 +1216,7 @@ export const python = [
     {
         id: 'python_120',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = []\nfor i in range(1, 4):\n    numere.append(i)\nprint(numere)',
         correctAnswer: '[1, 2, 3]',
@@ -1225,7 +1225,7 @@ export const python = [
     {
         id: 'python_121',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\ntext = "abc"\nlista = list(text)\nprint(lista)',
         correctAnswer: '[\'a\', \'b\', \'c\']',
@@ -1234,7 +1234,7 @@ export const python = [
     {
         id: 'python_122',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\ncopie = numere.copy()\ncopie.append(4)\nprint(numere)',
         correctAnswer: '[1, 2, 3]',
@@ -1243,7 +1243,7 @@ export const python = [
     {
         id: 'python_123',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere1 = [1, 2]\nnumere2 = [3, 4]\ntotal = numere1 + numere2\nprint(total)',
         correctAnswer: '[1, 2, 3, 4]',
@@ -1252,7 +1252,7 @@ export const python = [
     {
         id: 'python_124',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3] * 2\nprint(numere)',
         correctAnswer: '[1, 2, 3, 1, 2, 3]',
@@ -1261,7 +1261,7 @@ export const python = [
     {
         id: 'python_125',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\npare = [x for x in numere if x % 2 == 0]\nprint(pare)',
         correctAnswer: '[2, 4]',
@@ -1270,7 +1270,7 @@ export const python = [
     {
         id: 'python_126',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\npatrate = [x ** 2 for x in numere]\nprint(patrate)',
         correctAnswer: '[1, 4, 9]',
@@ -1279,7 +1279,7 @@ export const python = [
     {
         id: 'python_127',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 2, 1]\nunique = list(set(numere))\nprint(sorted(unique))',
         correctAnswer: '[1, 2, 3]',
@@ -1288,7 +1288,7 @@ export const python = [
     {
         id: 'python_128',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [[1, 2], [3, 4]]\nprint(numere[0][1])',
         correctAnswer: '2',
@@ -1297,7 +1297,7 @@ export const python = [
     {
         id: 'python_129',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nmatrice = [[1, 2, 3], [4, 5, 6]]\nfor rand in matrice:\n    for elem in rand:\n        print(elem)',
         correctAnswer: '1\\n2\\n3\\n4\\n5\\n6',
@@ -1306,7 +1306,7 @@ export const python = [
     {
         id: 'python_130',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[::2])',
         correctAnswer: '[1, 3, 5]',
@@ -1315,7 +1315,7 @@ export const python = [
     {
         id: 'python_131',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[::-1])',
         correctAnswer: '[5, 4, 3, 2, 1]',
@@ -1324,7 +1324,7 @@ export const python = [
     {
         id: 'python_132',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.insert(1, 10)\nprint(numere)',
         correctAnswer: '[1, 10, 2, 3]',
@@ -1333,7 +1333,7 @@ export const python = [
     {
         id: 'python_133',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nnumere[1:3] = [10, 20]\nprint(numere)',
         correctAnswer: '[1, 10, 20, 4, 5]',
@@ -1342,7 +1342,7 @@ export const python = [
     {
         id: 'python_134',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nfruit = ["măr", "portocală", "banană"]\nfor i, fruct in enumerate(fruit):\n    print(i, fruct)',
         correctAnswer: '0 măr\\n1 portocală\\n2 banană',
@@ -1351,7 +1351,7 @@ export const python = [
     {
         id: 'python_135',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nnou_lista = [x * 2 for x in numere]\nprint(nou_lista)',
         correctAnswer: '[2, 4, 6, 8, 10]',
@@ -1360,7 +1360,7 @@ export const python = [
     {
         id: 'python_136',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'hard',
         question: 'Ce va afișa?\n\nnumere = [[1, 2, 3], [4, 5, 6]]\nflatten = [x for rand in numere for x in rand]\nprint(flatten)',
         correctAnswer: '[1, 2, 3, 4, 5, 6]',
@@ -1369,7 +1369,7 @@ export const python = [
     {
         id: 'python_137',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'easy',
         question: 'Ce va afișa?\n\nlista = [0, False, "", [], None]\nfor elem in lista:\n    if elem:\n        print("Truthy")\n    else:\n        print("Falsy")',
         correctAnswer: 'Falsy\\nFalsy\\nFalsy\\nFalsy\\nFalsy',
@@ -1378,7 +1378,7 @@ export const python = [
     {
         id: 'python_138',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nfruit = ["măr", "banană", "portocală"]\nfruit.clear()\nprint(fruit)',
         correctAnswer: '[]',
@@ -1387,7 +1387,7 @@ export const python = [
     {
         id: 'python_139',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nlista1 = [1, 2, 3]\nlista2 = lista1\nlista2[0] = 10\nprint(lista1)',
         correctAnswer: '[10, 2, 3]',
@@ -1396,7 +1396,7 @@ export const python = [
     {
         id: 'python_140',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'hard',
         question: 'Ce va afișa?\n\nnumere = [5, 2, 8, 1, 9]\nsorted_desc = sorted(numere, reverse=True)\nprint(sorted_desc)',
         correctAnswer: '[9, 8, 5, 2, 1]',
@@ -1406,7 +1406,7 @@ export const python = [
         id: 'python_141',
         category: 'Liste',
         type: 'medium',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nwords = ["python", "java", "c++"]\nresult = [w.upper() for w in words]\nprint(result)',
         correctAnswer: '[\'PYTHON\', \'JAVA\', \'C++\']',
@@ -1415,7 +1415,7 @@ export const python = [
     {
         id: 'python_142',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5, 6]\nfiltrate = [x for x in numere if x > 3]\nprint(filtrate)',
         correctAnswer: '[4, 5, 6]',
@@ -1424,7 +1424,7 @@ export const python = [
     {
         id: 'python_143',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'hard',
         question: 'Ce va afișa?\n\nnumere = [3, 1, 4, 1, 5, 9, 2, 6]\ncount_1 = numere.count(1)\nprint(count_1)',
         correctAnswer: '2',
@@ -1433,7 +1433,7 @@ export const python = [
     {
         id: 'python_144',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nziua_saptamanii = ["Luni", "Marți", "Miercuri"]\nindex_marți = ziua_saptamanii.index("Marți")\nprint(index_marți)',
         correctAnswer: '1',
@@ -1442,7 +1442,7 @@ export const python = [
     {
         id: 'python_145',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nfor i in range(len(numere)):\n    print(numere[i])',
         correctAnswer: '1\\n2\\n3',
@@ -1451,7 +1451,7 @@ export const python = [
     {
         id: 'python_146',
         category: 'Liste',
-        type: 'code-snippet',
+        type: 'text-complete',
         difficulty: 'medium',
         question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\ncolors[1] = "galben"\nprint(colors)',
         correctAnswer: '[\'roșu\', \'galben\', \'albastru\']',
