@@ -87,11 +87,17 @@ export const python = [
     {
         id: 'python_007',
         category: 'Basics',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa acest cod?\n\nprint("Hello World")',
+        question: 'Ce va afișa print("Hello World")?',
+        options: [
+            'Hello World',
+            'Hello',
+            'World',
+            '"Hello World"'
+        ],
         correctAnswer: 'Hello World',
-        explanation: 'Funcția print() afișează texto pe ecran. Aceasta va afișa: Hello World'
+        explanation: 'Funcția print() afișează textul pe ecran. Aceasta va afișa: Hello World'
     },
     {
         id: 'python_008',
@@ -135,11 +141,17 @@ export const python = [
     {
         id: 'python_011',
         category: 'Basics',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nx = 10\nprint(type(x))',
-        correctAnswer: '<class \'int\'>',
-        explanation: 'x este egal cu 10, care este un întreg. type(x) va afișa tipul datei: <class \'int\'>.'
+        question: 'Ce va afișa: print(10 + 5)?',
+        options: [
+            '15',
+            '10',
+            '5',
+            '105'
+        ],
+        correctAnswer: '15',
+        explanation: 'Operația de adunare: 10 + 5 = 15. print() va afișa rezultatul: 15'
     },
     {
         id: 'python_012',
@@ -168,59 +180,80 @@ export const python = [
     {
         id: 'python_014',
         category: 'Basics',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(10 + 5)',
-        correctAnswer: '15',
-        explanation: 'Operația de adunare: 10 + 5 = 15. print() va afișa rezultatul: 15'
-    },
-    {
-        id: 'python_015',
-        category: 'Basics',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(10 - 3)',
+        question: 'Ce va afișa: print(10 - 3)?',
+        options: [
+            '7',
+            '13',
+            '3',
+            '10'
+        ],
         correctAnswer: '7',
         explanation: 'Operația de scădere: 10 - 3 = 7. print() va afișa: 7'
     },
     {
-        id: 'python_016',
+        id: 'python_015',
         category: 'Basics',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(4 * 5)',
+        question: 'Ce va afișa: print(4 * 5)?',
+        options: [
+            '20',
+            '9',
+            '1',
+            '45'
+        ],
         correctAnswer: '20',
         explanation: 'Operația de înmulțire: 4 * 5 = 20. print() va afișa: 20'
     },
     {
-        id: 'python_017',
+        id: 'python_016',
         category: 'Basics',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(20 / 4)',
+        question: 'Ce va afișa: print(20 / 4)?',
+        options: [
+            '5.0',
+            '5',
+            '4',
+            '0.2'
+        ],
         correctAnswer: '5.0',
         explanation: 'Operația de împărțire: 20 / 4 = 5.0. În Python 3, / returnează întotdeauna un float.'
     },
     {
-        id: 'python_018',
+        id: 'python_017',
         category: 'Basics',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(2 ** 3)',
+        question: 'Ce va afișa: print(2 ** 3)?',
+        options: [
+            '8',
+            '6',
+            '5',
+            '9'
+        ],
         correctAnswer: '8',
         explanation: 'Operatorul ** este pentru putere. 2 ** 3 = 2³ = 8. print() va afișa: 8'
     },
     {
-        id: 'python_019',
+        id: 'python_018',
         category: 'Basics',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(17 % 5)',
+        question: 'Ce va afișa: print(17 % 5)?',
+        options: [
+            '2',
+            '3',
+            '5',
+            '17'
+        ],
         correctAnswer: '2',
         explanation: 'Operatorul % este modulo (rest). 17 ÷ 5 = 3 rest 2. Deci 17 % 5 = 2.'
     },
     {
-        id: 'python_020',
+        id: 'python_019',
         category: 'Basics',
         type: 'true-false',
         difficulty: 'easy',
@@ -228,14 +261,35 @@ export const python = [
         correctAnswer: 'Adevărat',
         explanation: '// este operatorul de împărțire întreagă. De exemplu: 20 // 3 = 6 (nu 6.67).'
     },
+    {
+        id: 'python_020',
+        category: 'Basics',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: print(3 + 2 * 4)?',
+        options: [
+            '11',
+            '20',
+            '14',
+            '9'
+        ],
+        correctAnswer: '11',
+        explanation: 'Ordinea operații: * înainte de +. Deci: 2 * 4 = 8, apoi 3 + 8 = 11.'
+    },
 
-    // ===== PRINT ȘI INPUT - 15 ÎNTREBĂRI =====
+    // ===== PRINT ȘI INPUT - 20 ÎNTREBĂRI =====
     {
         id: 'python_021',
         category: 'Print și Input',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint("Python", "este", "ușor")',
+        question: 'Ce va afișa: print("Python", "este", "ușor")?',
+        options: [
+            'Python este ușor',
+            'Pythonestetusut',
+            'Python\neste\nușor',
+            '"Python" "este" "ușor"'
+        ],
         correctAnswer: 'Python este ușor',
         explanation: 'print() cu mai multe argumente le separă cu spații. Afișează: Python este ușor'
     },
@@ -257,15 +311,6 @@ export const python = [
     {
         id: 'python_023',
         category: 'Print și Input',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint("Linia 1")\nprint("Linia 2")',
-        correctAnswer: 'Linia 1\\nLinia 2',
-        explanation: 'Două print() separate pe linii diferite. Fiecare afișează pe o linie nouă.'
-    },
-    {
-        id: 'python_024',
-        category: 'Print și Input',
         type: 'true-false',
         difficulty: 'easy',
         question: 'input() returnează un string (text).',
@@ -273,16 +318,7 @@ export const python = [
         explanation: 'input() citește o linie de text de la tastatură și o returnează ca string, chiar dacă ții numere.'
     },
     {
-        id: 'python_025',
-        category: 'Print și Input',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va face acest cod?\n\nnume = input("Scrie numele: ")',
-        correctAnswer: 'Afișează mesajul și așteaptă să scrii text',
-        explanation: 'input() afișează mesajul și așteaptă ca utilizatorul să tasteze ceva. Rezultatul se salvează în variabila "nume".'
-    },
-    {
-        id: 'python_026',
+        id: 'python_024',
         category: 'Print și Input',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -297,16 +333,22 @@ export const python = [
         explanation: 'int("5") transformă "5" (text) în 5 (număr). float("3.14") transformă în 3.14.'
     },
     {
-        id: 'python_027',
+        id: 'python_025',
         category: 'Print și Input',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint("Vârstă: " + str(15))',
+        question: 'Ce va afișa: print("Vârstă: " + str(15))?',
+        options: [
+            'Vârstă: 15',
+            'Vârstă:15',
+            'Error',
+            'str(15)'
+        ],
         correctAnswer: 'Vârstă: 15',
         explanation: 'str(15) transformă 15 în "15" (text). Apoi + concatenează (alipește) textele.'
     },
     {
-        id: 'python_028',
+        id: 'python_026',
         category: 'Print și Input',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -321,25 +363,37 @@ export const python = [
         explanation: 'print("5+3") afișează textul literal: 5+3. print(5+3) calculează și afișează: 8'
     },
     {
-        id: 'python_029',
+        id: 'python_027',
         category: 'Print și Input',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint("A" * 3)',
+        question: 'Ce va afișa: print("A" * 3)?',
+        options: [
+            'AAA',
+            'A3',
+            '3A',
+            'A A A'
+        ],
         correctAnswer: 'AAA',
         explanation: '* pentru stringuri înseamnă repetare. "A" * 3 repetă "A" de 3 ori: AAA'
     },
     {
-        id: 'python_030',
+        id: 'python_028',
         category: 'Print și Input',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(len("Python"))',
+        question: 'Ce va afișa: print(len("Python"))?',
+        options: [
+            '6',
+            '7',
+            '5',
+            '8'
+        ],
         correctAnswer: '6',
         explanation: 'len() returnează lungimea (numărul de caractere). "Python" are 6 caractere.'
     },
     {
-        id: 'python_031',
+        id: 'python_029',
         category: 'Print și Input',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -354,34 +408,37 @@ export const python = [
         explanation: '"python".upper() returnează "PYTHON". Similar, .lower() transformă în minuscule.'
     },
     {
-        id: 'python_032',
+        id: 'python_030',
         category: 'Print și Input',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\ntext = "python"\nprint(text.upper())',
+        question: 'Ce va afișa: text = "python" \\ print(text.upper())?',
+        options: [
+            'PYTHON',
+            'Python',
+            'python',
+            'PYTHON!'
+        ],
         correctAnswer: 'PYTHON',
         explanation: '.upper() transformă textul în majuscule. "python" devine "PYTHON".'
     },
     {
-        id: 'python_033',
+        id: 'python_031',
         category: 'Print și Input',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\ntext = "PYTHON"\nprint(text.lower())',
+        question: 'Ce va afișa: text = "PYTHON" \\ print(text.lower())?',
+        options: [
+            'python',
+            'PYTHON',
+            'Python',
+            'pYTHON'
+        ],
         correctAnswer: 'python',
         explanation: '.lower() transformă textul în minuscule. "PYTHON" devine "python".'
     },
     {
-        id: 'python_034',
-        category: 'Print și Input',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint("Hello {}, your age is {}".format("Ana", 12))',
-        correctAnswer: 'Hello Ana, your age is 12',
-        explanation: '{} sunt placeholder-i. .format() înlocuiește {} cu valorile date.'
-    },
-    {
-        id: 'python_035',
+        id: 'python_032',
         category: 'Print și Input',
         type: 'true-false',
         difficulty: 'easy',
@@ -390,54 +447,84 @@ export const python = [
         explanation: 'print("a", "b", "c", sep=",") afișează: a,b,c (în loc de a b c).'
     },
 
-    // ===== OPERATORI - 20 ÎNTREBĂRI =====
+    // ===== OPERATORI - 25 ÎNTREBĂRI =====
     {
-        id: 'python_036',
+        id: 'python_033',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(10 > 5)',
+        question: 'Ce va afișa: print(10 > 5)?',
+        options: [
+            'True',
+            'False',
+            '5',
+            'Error'
+        ],
         correctAnswer: 'True',
         explanation: '> este operatorul "mai mare decât". 10 > 5 este adevărat, deci afișează True.'
     },
     {
-        id: 'python_037',
+        id: 'python_034',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(10 < 5)',
+        question: 'Ce va afișa: print(10 < 5)?',
+        options: [
+            'False',
+            'True',
+            '15',
+            '-5'
+        ],
         correctAnswer: 'False',
         explanation: '< este operatorul "mai mic decât". 10 < 5 este fals, deci afișează False.'
     },
     {
-        id: 'python_038',
+        id: 'python_035',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(10 == 10)',
+        question: 'Ce va afișa: print(10 == 10)?',
+        options: [
+            'True',
+            'False',
+            '10',
+            'Error'
+        ],
         correctAnswer: 'True',
         explanation: '== verifică egalitate. 10 == 10 este adevărat, deci afișează True.'
     },
     {
-        id: 'python_039',
+        id: 'python_036',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(10 != 5)',
+        question: 'Ce va afișa: print(10 != 5)?',
+        options: [
+            'True',
+            'False',
+            '15',
+            'Error'
+        ],
         correctAnswer: 'True',
-        explanation: '!= significa "nu este egal cu". 10 != 5 este adevărat, deci afișează True.'
+        explanation: '!= significa "nu este egal cu". 10 != 5 este adevărat, deci afișează True'
     },
     {
-        id: 'python_040',
+        id: 'python_037',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(10 >= 10)',
+        question: 'Ce va afișa: print(10 >= 10)?',
+        options: [
+            'True',
+            'False',
+            '0',
+            'Error'
+        ],
         correctAnswer: 'True',
         explanation: '>= significa "mai mare sau egal cu". 10 >= 10 este adevărat.'
     },
     {
-        id: 'python_041',
+        id: 'python_038',
         category: 'Operatori',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -452,43 +539,67 @@ export const python = [
         explanation: 'and returnează True doar dacă ambele condiții sunt True. Altfel, returnează False.'
     },
     {
-        id: 'python_042',
+        id: 'python_039',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(5 > 3 and 10 > 5)',
+        question: 'Ce va afișa: print(5 > 3 and 10 > 5)?',
+        options: [
+            'True',
+            'False',
+            '15',
+            'Error'
+        ],
         correctAnswer: 'True',
         explanation: 'Ambele condiții sunt adevărate: 5 > 3 (True) AND 10 > 5 (True). Rezultat: True'
     },
     {
-        id: 'python_043',
+        id: 'python_040',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(5 > 10 or 10 > 5)',
+        question: 'Ce va afișa: print(5 > 10 or 10 > 5)?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '10'
+        ],
         correctAnswer: 'True',
         explanation: 'or returnează True dacă cel puțin o condiție este adevărată. 10 > 5 este True, deci rezultat: True'
     },
     {
-        id: 'python_044',
+        id: 'python_041',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(not True)',
+        question: 'Ce va afișa: print(not True)?',
+        options: [
+            'False',
+            'True',
+            'Error',
+            '0'
+        ],
         correctAnswer: 'False',
         explanation: 'not neagă o valoare. not True = False, not False = True.'
     },
     {
-        id: 'python_045',
+        id: 'python_042',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(not False)',
+        question: 'Ce va afișa: print(not False)?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '1'
+        ],
         correctAnswer: 'True',
         explanation: 'not False = True. not neagă valoarea logică.'
     },
     {
-        id: 'python_046',
+        id: 'python_043',
         category: 'Operatori',
         type: 'true-false',
         difficulty: 'easy',
@@ -497,16 +608,22 @@ export const python = [
         explanation: 'Boolean sunt valori de adevăr: True (adevărat) sau False (fals).'
     },
     {
-        id: 'python_047',
+        id: 'python_044',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(3 < 5 < 7)',
+        question: 'Ce va afișa: print(3 < 5 < 7)?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '15'
+        ],
         correctAnswer: 'True',
         explanation: 'Python permite comparații înlănțuite. 3 < 5 AND 5 < 7 sunt ambele True.'
     },
     {
-        id: 'python_048',
+        id: 'python_045',
         category: 'Operatori',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -521,25 +638,37 @@ export const python = [
         explanation: '5 este număr, "5" este text. Sunt tipuri diferite, deci nu sunt egale.'
     },
     {
-        id: 'python_049',
+        id: 'python_046',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint("a" in "banana")',
+        question: 'Ce va afișa: print("a" in "banana")?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            'a'
+        ],
         correctAnswer: 'True',
         explanation: 'in verifică dacă un caracter/string se găsește în alt string. "a" este în "banana".'
     },
     {
-        id: 'python_050',
+        id: 'python_047',
         category: 'Operatori',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint("x" in "banana")',
+        question: 'Ce va afișa: print("x" in "banana")?',
+        options: [
+            'False',
+            'True',
+            'Error',
+            '0'
+        ],
         correctAnswer: 'False',
         explanation: '"x" nu se găsește în "banana", deci resultat: False'
     },
     {
-        id: 'python_051',
+        id: 'python_048',
         category: 'Operatori',
         type: 'true-false',
         difficulty: 'easy',
@@ -547,64 +676,40 @@ export const python = [
         correctAnswer: 'Adevărat',
         explanation: '"x" not in "banana" returnează True, pentru că "x" nu este în "banana".'
     },
-    {
-        id: 'python_052',
-        category: 'Operatori',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(5 and 3)',
-        correctAnswer: '3',
-        explanation: 'and cu numere: returnează ultimul număr dacă toate sunt "truthy". 5 și 3 sunt amândouă truthy, deci: 3'
-    },
-    {
-        id: 'python_053',
-        category: 'Operatori',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(0 or 5)',
-        correctAnswer: '5',
-        explanation: 'or cu numere: returnează prima valoare "truthy". 0 este falsy, 5 este truthy, deci: 5'
-    },
-    {
-        id: 'python_054',
-        category: 'Operatori',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint(2 + 3 * 4)',
-        correctAnswer: '14',
-        explanation: 'Ordinea operații: * înainte de +. Deci: 3 * 4 = 12, apoi 2 + 12 = 14.'
-    },
-    {
-        id: 'python_055',
-        category: 'Operatori',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nprint((2 + 3) * 4)',
-        correctAnswer: '20',
-        explanation: 'Cu paranteze: (2 + 3) * 4 = 5 * 4 = 20. Parantezele schimbă ordinea operații.'
-    },
 
     // ===== IF/ELSE - 20 ÎNTREBĂRI =====
     {
-        id: 'python_056',
+        id: 'python_049',
         category: 'If/Else',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nif 10 > 5:\n    print("Adevărat")',
+        question: 'Ce va afișa codul?\nif 10 > 5:\n    print("Adevărat")',
+        options: [
+            'Adevărat',
+            'Fals',
+            'Error',
+            'nimic'
+        ],
         correctAnswer: 'Adevărat',
         explanation: 'if verifică o condiție. 10 > 5 este True, deci se execută print("Adevărat").'
     },
     {
-        id: 'python_057',
+        id: 'python_050',
         category: 'If/Else',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nif 10 < 5:\n    print("Adevărat")\nelse:\n    print("Fals")',
+        question: 'Ce va afișa codul?\nif 10 < 5:\n    print("Adevărat")\nelse:\n    print("Fals")',
+        options: [
+            'Fals',
+            'Adevărat',
+            'Error',
+            'Ambele'
+        ],
         correctAnswer: 'Fals',
         explanation: '10 < 5 este False, deci se execută blocul else: print("Fals")'
     },
     {
-        id: 'python_058',
+        id: 'python_051',
         category: 'If/Else',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -619,7 +724,7 @@ export const python = [
         explanation: 'Indentarea (spații) în Python definește ce cod aparține if, else, for, etc. Este obligatorie!'
     },
     {
-        id: 'python_059',
+        id: 'python_052',
         category: 'If/Else',
         type: 'true-false',
         difficulty: 'easy',
@@ -628,34 +733,52 @@ export const python = [
         explanation: 'elif este scurtat pentru "else if". Permite mai multe condiții consecutive.'
     },
     {
-        id: 'python_060',
+        id: 'python_053',
         category: 'If/Else',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nvârstă = 15\nif vârstă >= 18:\n    print("Adult")\nelse:\n    print("Minor")',
+        question: 'Ce va afișa codul?\nvârstă = 15\nif vârstă >= 18:\n    print("Adult")\nelse:\n    print("Minor")',
+        options: [
+            'Minor',
+            'Adult',
+            'Error',
+            'nimic'
+        ],
         correctAnswer: 'Minor',
         explanation: 'vârstă = 15. 15 >= 18 este False, deci se execută else: print("Minor")'
     },
     {
-        id: 'python_061',
+        id: 'python_054',
         category: 'If/Else',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnume = "Ana"\nif nume == "Ana":\n    print("Salut Ana!")\nelse:\n    print("Salut necunoscut!")',
+        question: 'Ce va afișa codul?\nnume = "Ana"\nif nume == "Ana":\n    print("Salut Ana!")\nelse:\n    print("Salut necunoscut!")',
+        options: [
+            'Salut Ana!',
+            'Salut necunoscut!',
+            'Error',
+            'Ana'
+        ],
         correctAnswer: 'Salut Ana!',
         explanation: 'nume == "Ana" este True, deci se execută print("Salut Ana!")'
     },
     {
-        id: 'python_062',
+        id: 'python_055',
         category: 'If/Else',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nscor = 75\nif scor >= 90:\n    print("A")\nelif scor >= 80:\n    print("B")\nelif scor >= 70:\n    print("C")\nelse:\n    print("F")',
+        question: 'Ce va afișa codul?\nscor = 75\nif scor >= 90:\n    print("A")\nelif scor >= 80:\n    print("B")\nelif scor >= 70:\n    print("C")\nelse:\n    print("F")',
+        options: [
+            'C',
+            'B',
+            'A',
+            'F'
+        ],
         correctAnswer: 'C',
         explanation: 'scor = 75. Nu intră în >= 90, nici >= 80, dar 75 >= 70 este True, deci: C'
     },
     {
-        id: 'python_063',
+        id: 'python_056',
         category: 'If/Else',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -670,16 +793,22 @@ export const python = [
         explanation: 'Condiții imbricate sunt if-uri ce se află în interiorul alt if. Se folosesc pentru logică mai complexă.'
     },
     {
-        id: 'python_064',
+        id: 'python_057',
         category: 'If/Else',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nif 5 > 3:\n    if 4 > 2:\n        print("Ambele adevărate")',
+        question: 'Ce va afișa codul?\nif 5 > 3:\n    if 4 > 2:\n        print("Ambele adevărate")',
+        options: [
+            'Ambele adevărate',
+            'Fals',
+            'Error',
+            'nimic'
+        ],
         correctAnswer: 'Ambele adevărate',
         explanation: 'Condiții imbricate. 5 > 3 este True, și 4 > 2 este True, deci se execută print().'
     },
     {
-        id: 'python_065',
+        id: 'python_058',
         category: 'If/Else',
         type: 'true-false',
         difficulty: 'easy',
@@ -688,25 +817,37 @@ export const python = [
         explanation: 'Valori "falsy": 0, "", None, False, liste goale [], etc. sunt tratate ca False în if.'
     },
     {
-        id: 'python_066',
+        id: 'python_059',
         category: 'If/Else',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nif 5:\n    print("True")\nelse:\n    print("False")',
+        question: 'Ce va afișa codul?\nif 5:\n    print("True")\nelse:\n    print("False")',
+        options: [
+            'True',
+            'False',
+            'Error',
+            'nimic'
+        ],
         correctAnswer: 'True',
         explanation: '5 este un număr non-zero, deci este "truthy". Condițiunea este adevărată.'
     },
     {
-        id: 'python_067',
+        id: 'python_060',
         category: 'If/Else',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nif "":\n    print("True")\nelse:\n    print("False")',
+        question: 'Ce va afișa codul?\nif "":\n    print("True")\nelse:\n    print("False")',
+        options: [
+            'False',
+            'True',
+            'Error',
+            '""'
+        ],
         correctAnswer: 'False',
         explanation: '"" (stringul gol) este "falsy", deci condiția este falsă.'
     },
     {
-        id: 'python_068',
+        id: 'python_061',
         category: 'If/Else',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -721,16 +862,22 @@ export const python = [
         explanation: 'Expresia ternară: rezultat = "Da" if 5 > 3 else "Nu". Prescurtare pentru if/else pe o linie.'
     },
     {
-        id: 'python_069',
+        id: 'python_062',
         category: 'If/Else',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nmesaj = "Matur" if 20 > 18 else "Minor"\nprint(mesaj)',
+        question: 'Ce va afișa codul?\nmesaj = "Matur" if 20 > 18 else "Minor"\nprint(mesaj)',
+        options: [
+            'Matur',
+            'Minor',
+            'Error',
+            'if'
+        ],
         correctAnswer: 'Matur',
         explanation: '20 > 18 este True, deci mesaj = "Matur". print() afișează: Matur'
     },
     {
-        id: 'python_070',
+        id: 'python_063',
         category: 'If/Else',
         type: 'true-false',
         difficulty: 'easy',
@@ -739,18 +886,24 @@ export const python = [
         explanation: 'pass este un placeholder. if 5 > 3: pass nu face nimic, dar nu dă eroare.'
     },
 
-    // ===== BUCLE (FOR/WHILE) - 30 ÎNTREBĂRI =====
+    // ===== BUCLE (FOR) - 25 ÎNTREBĂRI =====
     {
-        id: 'python_071',
+        id: 'python_064',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor i in range(3):\n    print(i)',
-        correctAnswer: '0\\n1\\n2',
+        question: 'Ce va afișa codul?\nfor i in range(3):\n    print(i)',
+        options: [
+            '0 1 2',
+            '1 2 3',
+            '0 1 2 3',
+            'Error'
+        ],
+        correctAnswer: '0 1 2',
         explanation: 'range(3) genrează 0, 1, 2. for repetă print(i) pentru fiecare valoare.'
     },
     {
-        id: 'python_072',
+        id: 'python_065',
         category: 'Bucle',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -765,43 +918,67 @@ export const python = [
         explanation: 'range(n) generează numere de la 0 la n-1. range(5) = [0, 1, 2, 3, 4].'
     },
     {
-        id: 'python_073',
+        id: 'python_066',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor i in range(1, 4):\n    print(i)',
-        correctAnswer: '1\\n2\\n3',
+        question: 'Ce va afișa codul?\nfor i in range(1, 4):\n    print(i)',
+        options: [
+            '1 2 3',
+            '0 1 2 3',
+            '1 2 3 4',
+            'Error'
+        ],
+        correctAnswer: '1 2 3',
         explanation: 'range(1, 4) generează de la 1 la 3 (4 nu e inclus). Afișează: 1, 2, 3'
     },
     {
-        id: 'python_074',
+        id: 'python_067',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor i in range(0, 6, 2):\n    print(i)',
-        correctAnswer: '0\\n2\\n4',
+        question: 'Ce va afișa codul?\nfor i in range(0, 6, 2):\n    print(i)',
+        options: [
+            '0 2 4',
+            '0 1 2 3 4 5',
+            '2 4 6',
+            'Error'
+        ],
+        correctAnswer: '0 2 4',
         explanation: 'range(start, stop, step). range(0, 6, 2) = [0, 2, 4]. Merge din 2 în 2.'
     },
     {
-        id: 'python_075',
+        id: 'python_068',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor litera in "Python":\n    print(litera)',
-        correctAnswer: 'P\\ny\\nt\\nh\\no\\nn',
+        question: 'Ce va afișa codul?\nfor litera in "Python":\n    print(litera)',
+        options: [
+            'P y t h o n (fiecare pe linie)',
+            'Python',
+            'P t h n',
+            'Error'
+        ],
+        correctAnswer: 'P y t h o n (fiecare pe linie)',
         explanation: 'for poate itera prin stringuri. Afișează fiecare caracter pe o linie nouă.'
     },
     {
-        id: 'python_076',
+        id: 'python_069',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nsum = 0\nfor i in range(1, 4):\n    sum = sum + i\nprint(sum)',
+        question: 'Ce va afișa codul?\nsum = 0\nfor i in range(1, 4):\n    sum = sum + i\nprint(sum)',
+        options: [
+            '6',
+            '3',
+            '4',
+            '12'
+        ],
         correctAnswer: '6',
         explanation: 'Loop cu sum: 0 + 1 = 1, 1 + 2 = 3, 3 + 3 = 6. Afișează: 6'
     },
     {
-        id: 'python_077',
+        id: 'python_070',
         category: 'Bucle',
         type: 'true-false',
         difficulty: 'easy',
@@ -810,16 +987,22 @@ export const python = [
         explanation: 'while condiție: se execută blocul până când condiția devine False.'
     },
     {
-        id: 'python_078',
+        id: 'python_071',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\ni = 0\nwhile i < 3:\n    print(i)\n    i += 1',
-        correctAnswer: '0\\n1\\n2',
+        question: 'Ce va afișa codul?\ni = 0\nwhile i < 3:\n    print(i)\n    i += 1',
+        options: [
+            '0 1 2',
+            '1 2 3',
+            '0 1 2 3',
+            'Error (bucla infinită)'
+        ],
+        correctAnswer: '0 1 2',
         explanation: 'while i < 3. i crește la fiecare iterație. 0, 1, 2 sunt afișate.'
     },
     {
-        id: 'python_079',
+        id: 'python_072',
         category: 'Bucle',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -834,16 +1017,22 @@ export const python = [
         explanation: 'break termină bucla imediat. Se merge la codul după buclă.'
     },
     {
-        id: 'python_080',
+        id: 'python_073',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor i in range(10):\n    if i == 3:\n        break\n    print(i)',
-        correctAnswer: '0\\n1\\n2',
+        question: 'Ce va afișa codul?\nfor i in range(10):\n    if i == 3:\n        break\n    print(i)',
+        options: [
+            '0 1 2',
+            '0 1 2 3',
+            '0 1 2 3 4 5 6 7 8 9',
+            'Error'
+        ],
+        correctAnswer: '0 1 2',
         explanation: 'Buclă cu break. Când i == 3, break oprește bucla. Afișează: 0, 1, 2'
     },
     {
-        id: 'python_081',
+        id: 'python_074',
         category: 'Bucle',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -858,25 +1047,37 @@ export const python = [
         explanation: 'continue sare la următoarea iterație a buclei, omitând codul rămas în iterația curentă.'
     },
     {
-        id: 'python_082',
+        id: 'python_075',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor i in range(5):\n    if i == 2:\n        continue\n    print(i)',
-        correctAnswer: '0\\n1\\n3\\n4',
+        question: 'Ce va afișa codul?\nfor i in range(5):\n    if i == 2:\n        continue\n    print(i)',
+        options: [
+            '0 1 3 4',
+            '0 1 2 3 4',
+            '1 3 4',
+            'Error'
+        ],
+        correctAnswer: '0 1 3 4',
         explanation: 'Când i == 2, continue sare peste print(). Afișează: 0, 1, 3, 4 (fără 2).'
     },
     {
-        id: 'python_083',
+        id: 'python_076',
         category: 'Bucle',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor i in range(1, 4):\n    for j in range(1, 3):\n        print(f"{i},{j}")',
-        correctAnswer: '1,1\\n1,2\\n2,1\\n2,2\\n3,1\\n3,2',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa codul?\nfor i in range(1, 4):\n    for j in range(1, 3):\n        print(f"{i},{j}")',
+        options: [
+            '1,1 1,2 2,1 2,2 3,1 3,2',
+            '1,1 1,2 1,3',
+            '1,1 2,2 3,3',
+            'Error'
+        ],
+        correctAnswer: '1,1 1,2 2,1 2,2 3,1 3,2',
         explanation: 'Bucle imbricate (nested). Bucla interioară se execută pentru fiecare iterație a buclei exterioare.'
     },
     {
-        id: 'python_084',
+        id: 'python_077',
         category: 'Bucle',
         type: 'multiple-choice',
         difficulty: 'easy',
@@ -891,7 +1092,7 @@ export const python = [
         explanation: 'for: for i in range(5). while: while i < 5. for e pentru secvențe, while e pentru condiții.'
     },
     {
-        id: 'python_085',
+        id: 'python_078',
         category: 'Bucle',
         type: 'true-false',
         difficulty: 'easy',
@@ -900,47 +1101,41 @@ export const python = [
         explanation: 'for/while...else: blocul else se execută dacă bucla se termină normal (fără break).'
     },
     {
-        id: 'python_086',
-        category: 'Bucle',
-        type: 'text-complete',
-        difficulty: 'medium',
-        question: 'Ce va afișa?\n\nfor i in range(3):\n    print(i)\nelse:\n    print("Gata!")',
-        correctAnswer: '0\\n1\\n2\\nGata!',
-        explanation: 'Buclă cu else. Else se execută după ce for se termină normal.'
-    },
-    {
-        id: 'python_087',
-        category: 'Bucle',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor i in range(5):\n    if i == 3:\n        break\nelse:\n    print("Gata!")',
-        correctAnswer: '(gol)',
-        explanation: 'Dacă break este executat, else nu se execută. Afișează nimic.'
-    },
-    {
-        id: 'python_088',
-        category: 'Bucle',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor x in [1, 2, 3]:\n    print(x)',
-        correctAnswer: '1\\n2\\n3',
-        explanation: 'for pentru o listă. Iterează prin fiecare element: 1, 2, 3.'
-    },
-    {
-        id: 'python_089',
-        category: 'Bucle',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\ni = 0\nwhile True:\n    print(i)\n    i += 1\n    if i >= 3:\n        break',
-        correctAnswer: '0\\n1\\n2',
-        explanation: 'while True = buclă infinită, dar break o oprește. Afișează: 0, 1, 2'
-    },
-    {
-        id: 'python_090',
+        id: 'python_079',
         category: 'Bucle',
         type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce calculează această buclă?\n\nproduct = 1\nfor i in range(1, 5):\n    product *= i',
+        question: 'Ce va afișa codul?\nfor i in range(3):\n    print(i)\nelse:\n    print("Gata!")',
+        options: [
+            '0 1 2 Gata!',
+            '0 1 2',
+            'Gata!',
+            'Error'
+        ],
+        correctAnswer: '0 1 2 Gata!',
+        explanation: 'Buclă cu else. Else se execută după ce for se termină normal.'
+    },
+    {
+        id: 'python_080',
+        category: 'Bucle',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa codul?\nfor x in [1, 2, 3]:\n    print(x)',
+        options: [
+            '1 2 3',
+            '[1, 2, 3]',
+            '1',
+            'Error'
+        ],
+        correctAnswer: '1 2 3',
+        explanation: 'for pentru o listă. Iterează prin fiecare element: 1, 2, 3.'
+    },
+    {
+        id: 'python_081',
+        category: 'Bucle',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce calculează această buclă?\nproduct = 1\nfor i in range(1, 5):\n    product *= i',
         options: [
             'Factorialul lui 4 (4! = 24)',
             'Suma de la 1 la 4',
@@ -951,34 +1146,52 @@ export const python = [
         explanation: '1 * 1 = 1, 1 * 2 = 2, 2 * 3 = 6, 6 * 4 = 24. Aceasta este 4! = 24.'
     },
     {
-        id: 'python_091',
+        id: 'python_082',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\ncount = 0\nfor i in range(1, 11):\n    if i % 2 == 0:\n        count += 1\nprint(count)',
+        question: 'Ce va afișa codul?\ncount = 0\nfor i in range(1, 11):\n    if i % 2 == 0:\n        count += 1\nprint(count)',
+        options: [
+            '5',
+            '10',
+            '6',
+            'Error'
+        ],
         correctAnswer: '5',
         explanation: 'Numără numerele pare de la 1 la 10. 2, 4, 6, 8, 10 = 5 numere pare.'
     },
     {
-        id: 'python_092',
+        id: 'python_083',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nsum = 0\nfor i in range(1, 6):\n    sum += i\nprint(sum)',
+        question: 'Ce va afișa codul?\nsum = 0\nfor i in range(1, 6):\n    sum += i\nprint(sum)',
+        options: [
+            '15',
+            '5',
+            '10',
+            '20'
+        ],
         correctAnswer: '15',
         explanation: '1 + 2 + 3 + 4 + 5 = 15. Loop suma numerele de la 1 la 5.'
     },
     {
-        id: 'python_093',
+        id: 'python_084',
         category: 'Bucle',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor i in range(3):\n    print("*" * (i + 1))',
-        correctAnswer: '*\\n**\\n***',
+        question: 'Ce va afișa codul?\nfor i in range(3):\n    print("*" * (i + 1))',
+        options: [
+            '* ** ***',
+            '*** ** *',
+            '***',
+            'Error'
+        ],
+        correctAnswer: '* ** ***',
         explanation: 'Creează un triunghi. i=0: "*", i=1: "**", i=2: "***".'
     },
     {
-        id: 'python_094',
+        id: 'python_085',
         category: 'Bucle',
         type: 'true-false',
         difficulty: 'easy',
@@ -986,475 +1199,681 @@ export const python = [
         correctAnswer: 'Adevărat',
         explanation: 'for i in range(5): pass este sintactic corect, doar nu face nimic.'
     },
-    {
-        id: 'python_095',
-        category: 'Bucle',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor litera in "hi":\n    for cifra in "12":\n        print(litera + cifra)',
-        correctAnswer: 'h1\\nh2\\ni1\\ni2',
-        explanation: 'Bucle imbricate cu stringuri. Fiecare combinație: h1, h2, i1, i2.'
-    },
-    {
-        id: 'python_096',
-        category: 'Bucle',
-        type: 'text-complete',
-        difficulty: 'medium',
-        question: 'Ce va afișa?\n\nn = 5\nfor i in range(1, n + 1):\n    print(i * "*")',
-        correctAnswer: '*\\n**\\n***\\n****\\n*****',
-        explanation: 'Triunghi de stele. Fiecare linie are i stele.'
-    },
 
     // ===== LISTE - 50 ÎNTREBĂRI =====
     {
-        id: 'python_097',
+        id: 'python_086',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\nprint(colors[0])',
+        question: 'Ce va afișa: colors = ["roșu", "verde", "albastru"] \\ print(colors[0])?',
+        options: [
+            'roșu',
+            'verde',
+            'albastru',
+            'Error'
+        ],
         correctAnswer: 'roșu',
         explanation: 'Lista cu 3 elemente. colors[0] e primul element: "roșu". Indexarea începe de la 0.'
     },
     {
-        id: 'python_098',
+        id: 'python_087',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[2])',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ print(numere[2])?',
+        options: [
+            '3',
+            '2',
+            '4',
+            'Error'
+        ],
         correctAnswer: '3',
         explanation: 'numere[2] e al treilea element (index 2): 3.'
     },
     {
-        id: 'python_099',
+        id: 'python_088',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\nprint(colors[-1])',
+        question: 'Ce va afișa: colors = ["roșu", "verde", "albastru"] \\ print(colors[-1])?',
+        options: [
+            'albastru',
+            'roșu',
+            'verde',
+            'Error'
+        ],
         correctAnswer: 'albastru',
         explanation: 'Indexul negativ -1 e ultimul element. colors[-1] = "albastru".'
     },
     {
-        id: 'python_100',
+        id: 'python_089',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\nprint(colors[-2])',
+        question: 'Ce va afișa: colors = ["roșu", "verde", "albastru"] \\ print(colors[-2])?',
+        options: [
+            'verde',
+            'roșu',
+            'albastru',
+            'Error'
+        ],
         correctAnswer: 'verde',
         explanation: 'colors[-2] e penultimul element: "verde".'
     },
     {
-        id: 'python_101',
+        id: 'python_090',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(len(numere))',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ print(len(numere))?',
+        options: [
+            '5',
+            '4',
+            '6',
+            'Error'
+        ],
         correctAnswer: '5',
         explanation: 'len() returnează lungimea listei. 5 elemente = lungimea 5.'
     },
     {
-        id: 'python_102',
+        id: 'python_091',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfruit = []\nfruit.append("măr")\nprint(fruit)',
+        question: 'Ce va afișa: fruit = [] \\ fruit.append("măr") \\ print(fruit)?',
+        options: [
+            '[\'măr\']',
+            '[]',
+            '[măr]',
+            'Error'
+        ],
         correctAnswer: '[\'măr\']',
         explanation: '.append() adaugă un element la sfârșitul listei. Lista devine: ["măr"]'
     },
     {
-        id: 'python_103',
+        id: 'python_092',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.append(4)\nprint(numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3] \\ numere.append(4) \\ print(numere)?',
+        options: [
+            '[1, 2, 3, 4]',
+            '[1, 2, 3]',
+            '[4]',
+            'Error'
+        ],
         correctAnswer: '[1, 2, 3, 4]',
         explanation: '.append(4) adaugă 4 la final. Lista devine: [1, 2, 3, 4]'
     },
     {
-        id: 'python_104',
+        id: 'python_093',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 2, 4]\nprint(numere.count(2))',
+        question: 'Ce va afișa: numere = [1, 2, 3, 2, 4] \\ print(numere.count(2))?',
+        options: [
+            '2',
+            '1',
+            '3',
+            'Error'
+        ],
         correctAnswer: '2',
         explanation: '.count() numără apariții. 2 apare de 2 ori în listă.'
     },
     {
-        id: 'python_105',
+        id: 'python_094',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere.index(3))',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ print(numere.index(3))?',
+        options: [
+            '2',
+            '1',
+            '3',
+            'Error'
+        ],
         correctAnswer: '2',
         explanation: '.index() returnează poziția. 3 e la index 2 (al treilea element).'
     },
     {
-        id: 'python_106',
+        id: 'python_095',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[1:3])',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ print(numere[1:3])?',
+        options: [
+            '[2, 3]',
+            '[1, 2]',
+            '[3, 4, 5]',
+            'Error'
+        ],
         correctAnswer: '[2, 3]',
         explanation: 'Slicing: numere[1:3] = elemente de la index 1 la 2 (3 nu e inclus): [2, 3]'
     },
     {
-        id: 'python_107',
+        id: 'python_096',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[:3])',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ print(numere[:3])?',
+        options: [
+            '[1, 2, 3]',
+            '[1, 2]',
+            '[3, 4, 5]',
+            'Error'
+        ],
         correctAnswer: '[1, 2, 3]',
         explanation: 'numere[:3] = primele 3 elemente: [1, 2, 3]'
     },
     {
-        id: 'python_108',
+        id: 'python_097',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[2:])',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ print(numere[2:])?',
+        options: [
+            '[3, 4, 5]',
+            '[1, 2]',
+            '[2, 3, 4, 5]',
+            'Error'
+        ],
         correctAnswer: '[3, 4, 5]',
         explanation: 'numere[2:] = din index 2 până la final: [3, 4, 5]'
     },
     {
-        id: 'python_109',
+        id: 'python_098',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nnumere[0] = 10\nprint(numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ numere[0] = 10 \\ print(numere)?',
+        options: [
+            '[10, 2, 3, 4, 5]',
+            '[1, 2, 3, 4, 5]',
+            '[1, 10, 3, 4, 5]',
+            'Error'
+        ],
         correctAnswer: '[10, 2, 3, 4, 5]',
         explanation: 'Modificare element: numere[0] = 10. Primul element devine 10.'
     },
     {
-        id: 'python_110',
+        id: 'python_099',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.remove(2)\nprint(numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3] \\ numere.remove(2) \\ print(numere)?',
+        options: [
+            '[1, 3]',
+            '[1, 2, 3]',
+            '[2, 3]',
+            'Error'
+        ],
         correctAnswer: '[1, 3]',
         explanation: '.remove() șterge prima apariție. 2 este șters. Lista: [1, 3]'
     },
     {
-        id: 'python_111',
+        id: 'python_100',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.pop()\nprint(numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3] \\ numere.pop() \\ print(numere)?',
+        options: [
+            '[1, 2]',
+            '[1, 2, 3]',
+            '[2, 3]',
+            'Error'
+        ],
         correctAnswer: '[1, 2]',
         explanation: '.pop() șterge ultimul element. 3 este șters. Lista: [1, 2]'
     },
     {
-        id: 'python_112',
+        id: 'python_101',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.pop(1)\nprint(numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3] \\ numere.pop(1) \\ print(numere)?',
+        options: [
+            '[1, 3]',
+            '[1, 2, 3]',
+            '[2, 3]',
+            'Error'
+        ],
         correctAnswer: '[1, 3]',
         explanation: '.pop(1) șterge element de la index 1 (care e 2). Lista: [1, 3]'
     },
     {
-        id: 'python_113',
+        id: 'python_102',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [3, 1, 2]\nnumere.sort()\nprint(numere)',
+        question: 'Ce va afișa: numere = [3, 1, 2] \\ numere.sort() \\ print(numere)?',
+        options: [
+            '[1, 2, 3]',
+            '[3, 1, 2]',
+            '[2, 1, 3]',
+            'Error'
+        ],
         correctAnswer: '[1, 2, 3]',
         explanation: '.sort() sortează în ordine crescătoare. [1, 2, 3]'
     },
     {
-        id: 'python_114',
+        id: 'python_103',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\ncolors.reverse()\nprint(colors)',
+        question: 'Ce va afișa: colors = ["roșu", "verde", "albastru"] \\ colors.reverse() \\ print(colors)?',
+        options: [
+            '[\'albastru\', \'verde\', \'roșu\']',
+            '[\'roșu\', \'verde\', \'albastru\']',
+            '[\'verde\', \'roșu\', \'albastru\']',
+            'Error'
+        ],
         correctAnswer: '[\'albastru\', \'verde\', \'roșu\']',
         explanation: '.reverse() inversează ordinea listei.'
     },
     {
-        id: 'python_115',
+        id: 'python_104',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nprint(2 in numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3] \\ print(2 in numere)?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '2'
+        ],
         correctAnswer: 'True',
         explanation: 'in verifică dacă element e în listă. 2 este în [1, 2, 3], deci True.'
     },
     {
-        id: 'python_116',
+        id: 'python_105',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nfor num in [1, 2, 3]:\n    print(num)',
-        correctAnswer: '1\\n2\\n3',
+        question: 'Ce va afișa: for num in [1, 2, 3]: \\ print(num)?',
+        options: [
+            '1 2 3',
+            '[1, 2, 3]',
+            '1',
+            'Error'
+        ],
+        correctAnswer: '1 2 3',
         explanation: 'for iterează prin liste. Afișează fiecare element.'
     },
     {
-        id: 'python_117',
+        id: 'python_106',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\ntotal = sum(numere)\nprint(total)',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ total = sum(numere) \\ print(total)?',
+        options: [
+            '15',
+            '5',
+            '10',
+            'Error'
+        ],
         correctAnswer: '15',
         explanation: 'sum() calculează suma elementelor. 1+2+3+4+5 = 15.'
     },
     {
-        id: 'python_118',
+        id: 'python_107',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [3, 1, 4, 1, 5]\nprint(max(numere))',
+        question: 'Ce va afișa: numere = [3, 1, 4, 1, 5] \\ print(max(numere))?',
+        options: [
+            '5',
+            '4',
+            '3',
+            'Error'
+        ],
         correctAnswer: '5',
         explanation: 'max() returnează cel mai mare element. 5 e cel mai mare.'
     },
     {
-        id: 'python_119',
+        id: 'python_108',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'easy',
-        question: 'Ce va afișa?\n\nnumere = [3, 1, 4, 1, 5]\nprint(min(numere))',
+        question: 'Ce va afișa: numere = [3, 1, 4, 1, 5] \\ print(min(numere))?',
+        options: [
+            '1',
+            '3',
+            '4',
+            'Error'
+        ],
         correctAnswer: '1',
         explanation: 'min() returnează cel mai mic element. 1 e cel mai mic.'
     },
     {
-        id: 'python_120',
+        id: 'python_109',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = []\nfor i in range(1, 4):\n    numere.append(i)\nprint(numere)',
+        question: 'Ce va afișa: numere = [] \\ for i in range(1, 4): \\ numere.append(i) \\ print(numere)?',
+        options: [
+            '[1, 2, 3]',
+            '[0, 1, 2]',
+            '[]',
+            'Error'
+        ],
         correctAnswer: '[1, 2, 3]',
         explanation: 'Loop care construiește lista. append adaugă 1, 2, 3. Lista: [1, 2, 3]'
     },
     {
-        id: 'python_121',
+        id: 'python_110',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\ntext = "abc"\nlista = list(text)\nprint(lista)',
+        question: 'Ce va afișa: text = "abc" \\ lista = list(text) \\ print(lista)?',
+        options: [
+            '[\'a\', \'b\', \'c\']',
+            '[\'abc\']',
+            '\'a\' \'b\' \'c\'',
+            'Error'
+        ],
         correctAnswer: '[\'a\', \'b\', \'c\']',
         explanation: 'list() transformă string în listă de caractere: ["a", "b", "c"]'
     },
     {
-        id: 'python_122',
+        id: 'python_111',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\ncopie = numere.copy()\ncopie.append(4)\nprint(numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3] \\ copie = numere.copy() \\ copie.append(4) \\ print(numere)?',
+        options: [
+            '[1, 2, 3]',
+            '[1, 2, 3, 4]',
+            'Error',
+            '[4]'
+        ],
         correctAnswer: '[1, 2, 3]',
         explanation: '.copy() creează copie. Modificarea copiei nu afectează original.'
     },
     {
-        id: 'python_123',
+        id: 'python_112',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere1 = [1, 2]\nnumere2 = [3, 4]\ntotal = numere1 + numere2\nprint(total)',
+        question: 'Ce va afișa: numere1 = [1, 2] \\ numere2 = [3, 4] \\ total = numere1 + numere2 \\ print(total)?',
+        options: [
+            '[1, 2, 3, 4]',
+            '[1, 2]',
+            '[3, 4]',
+            'Error'
+        ],
         correctAnswer: '[1, 2, 3, 4]',
         explanation: '+ concatenează (alipește) liste. [1, 2] + [3, 4] = [1, 2, 3, 4]'
     },
     {
-        id: 'python_124',
+        id: 'python_113',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3] * 2\nprint(numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3] * 2 \\ print(numere)?',
+        options: [
+            '[1, 2, 3, 1, 2, 3]',
+            '[1, 2, 3]',
+            '[2, 4, 6]',
+            'Error'
+        ],
         correctAnswer: '[1, 2, 3, 1, 2, 3]',
         explanation: '* repetă lista. [1, 2, 3] * 2 = [1, 2, 3, 1, 2, 3]'
     },
     {
-        id: 'python_125',
+        id: 'python_114',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\npare = [x for x in numere if x % 2 == 0]\nprint(pare)',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ pare = [x for x in numere if x % 2 == 0] \\ print(pare)?',
+        options: [
+            '[2, 4]',
+            '[1, 3, 5]',
+            '[1, 2, 3, 4, 5]',
+            'Error'
+        ],
         correctAnswer: '[2, 4]',
         explanation: 'List comprehension. Filtrează numerele pare: [2, 4]'
     },
     {
-        id: 'python_126',
+        id: 'python_115',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\npatrate = [x ** 2 for x in numere]\nprint(patrate)',
+        question: 'Ce va afișa: numere = [1, 2, 3] \\ patrate = [x ** 2 for x in numere] \\ print(patrate)?',
+        options: [
+            '[1, 4, 9]',
+            '[1, 2, 3]',
+            '[2, 4, 6]',
+            'Error'
+        ],
         correctAnswer: '[1, 4, 9]',
         explanation: 'List comprehension. Calculează pătrate: 1², 2², 3² = [1, 4, 9]'
     },
     {
-        id: 'python_127',
+        id: 'python_116',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 2, 1]\nunique = list(set(numere))\nprint(sorted(unique))',
-        correctAnswer: '[1, 2, 3]',
-        explanation: 'set() elimină duplicate. sorted() sortează. Rezultat: [1, 2, 3]'
-    },
-    {
-        id: 'python_128',
-        category: 'Liste',
-        type: 'text-complete',
-        difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [[1, 2], [3, 4]]\nprint(numere[0][1])',
+        question: 'Ce va afișa: numere = [[1, 2], [3, 4]] \\ print(numere[0][1])?',
+        options: [
+            '2',
+            '1',
+            '3',
+            'Error'
+        ],
         correctAnswer: '2',
         explanation: 'Liste imbricate. numere[0][1] = al doilea element din prima listă: 2'
     },
     {
-        id: 'python_129',
+        id: 'python_117',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nmatrice = [[1, 2, 3], [4, 5, 6]]\nfor rand in matrice:\n    for elem in rand:\n        print(elem)',
-        correctAnswer: '1\\n2\\n3\\n4\\n5\\n6',
-        explanation: 'Bucle imbricate pentru matrice 2D. Afișează fiecare element.'
-    },
-    {
-        id: 'python_130',
-        category: 'Liste',
-        type: 'text-complete',
-        difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[::2])',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ print(numere[::2])?',
+        options: [
+            '[1, 3, 5]',
+            '[2, 4]',
+            '[1, 2, 3]',
+            'Error'
+        ],
         correctAnswer: '[1, 3, 5]',
         explanation: '[::2] = sare peste 1. Afișează elementos de la start cu pas 2: [1, 3, 5]'
     },
     {
-        id: 'python_131',
+        id: 'python_118',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nprint(numere[::-1])',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ print(numere[::-1])?',
+        options: [
+            '[5, 4, 3, 2, 1]',
+            '[1, 2, 3, 4, 5]',
+            '[4, 3, 2, 1]',
+            'Error'
+        ],
         correctAnswer: '[5, 4, 3, 2, 1]',
         explanation: '[::-1] = inversează. Afișează lista în ordine inversă.'
     },
     {
-        id: 'python_132',
+        id: 'python_119',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nnumere.insert(1, 10)\nprint(numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3] \\ numere.insert(1, 10) \\ print(numere)?',
+        options: [
+            '[1, 10, 2, 3]',
+            '[1, 2, 3, 10]',
+            '[10, 1, 2, 3]',
+            'Error'
+        ],
         correctAnswer: '[1, 10, 2, 3]',
         explanation: '.insert(1, 10) inserează 10 la index 1. Lista: [1, 10, 2, 3]'
     },
     {
-        id: 'python_133',
+        id: 'python_120',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nnumere[1:3] = [10, 20]\nprint(numere)',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ numere[1:3] = [10, 20] \\ print(numere)?',
+        options: [
+            '[1, 10, 20, 4, 5]',
+            '[1, 2, 3, 4, 5]',
+            '[10, 20]',
+            'Error'
+        ],
         correctAnswer: '[1, 10, 20, 4, 5]',
         explanation: 'Slice assignment. Înlocuiește elemente 1-2 cu [10, 20].'
     },
     {
-        id: 'python_134',
+        id: 'python_121',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nfruit = ["măr", "portocală", "banană"]\nfor i, fruct in enumerate(fruit):\n    print(i, fruct)',
-        correctAnswer: '0 măr\\n1 portocală\\n2 banană',
+        question: 'Ce va afișa: fruit = ["măr", "portocală", "banană"] \\ for i, fruct in enumerate(fruit): print(i, fruct)?',
+        options: [
+            '0 măr \\ 1 portocală \\ 2 banană',
+            'măr portocală banană',
+            '1 măr 2 portocală 3 banană',
+            'Error'
+        ],
+        correctAnswer: '0 măr \\ 1 portocală \\ 2 banană',
         explanation: 'enumerate() dă index și valoare. Afișează: 0 măr, 1 portocală, 2 banană'
     },
     {
-        id: 'python_135',
+        id: 'python_122',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5]\nnou_lista = [x * 2 for x in numere]\nprint(nou_lista)',
+        question: 'Ce va afișa: numere = [1, 2, 3, 4, 5] \\ nou_lista = [x * 2 for x in numere] \\ print(nou_lista)?',
+        options: [
+            '[2, 4, 6, 8, 10]',
+            '[1, 2, 3, 4, 5]',
+            '[1, 4, 9, 16, 25]',
+            'Error'
+        ],
         correctAnswer: '[2, 4, 6, 8, 10]',
         explanation: 'List comprehension. Dublează fiecare element: [2, 4, 6, 8, 10]'
     },
     {
-        id: 'python_136',
+        id: 'python_123',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: numere = [1, 2, 3] \\ for i in range(len(numere)): print(numere[i])?',
+        options: [
+            '1 2 3',
+            '[1, 2, 3]',
+            '0 1 2',
+            'Error'
+        ],
+        correctAnswer: '1 2 3',
+        explanation: 'Loop cu range(len()). Iterează prin indici și afișează fiecare element.'
+    },
+    {
+        id: 'python_124',
+        category: 'Liste',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: colors = ["roșu", "verde", "albastru"] \\ colors[1] = "galben" \\ print(colors)?',
+        options: [
+            '[\'roșu\', \'galben\', \'albastru\']',
+            '[\'roșu\', \'verde\', \'albastru\']',
+            '[\'galben\', \'verde\', \'albastru\']',
+            'Error'
+        ],
+        correctAnswer: '[\'roșu\', \'galben\', \'albastru\']',
+        explanation: 'Modificare element. Index 1 ("verde") devine "galben".'
+    },
+    {
+        id: 'python_125',
+        category: 'Liste',
+        type: 'multiple-choice',
         difficulty: 'hard',
-        question: 'Ce va afișa?\n\nnumere = [[1, 2, 3], [4, 5, 6]]\nflatten = [x for rand in numere for x in rand]\nprint(flatten)',
+        question: 'Ce va afișa: numere = [[1, 2, 3], [4, 5, 6]] \\ flatten = [x for rand in numere for x in rand] \\ print(flatten)?',
+        options: [
+            '[1, 2, 3, 4, 5, 6]',
+            '[[1, 2, 3], [4, 5, 6]]',
+            '[1, 4]',
+            'Error'
+        ],
         correctAnswer: '[1, 2, 3, 4, 5, 6]',
         explanation: 'List comprehension imbricată. Flattening 2D în 1D lista.'
     },
     {
-        id: 'python_137',
+        id: 'python_126',
         category: 'Liste',
-        type: 'text-complete',
-        difficulty: 'easy',
-        question: 'Ce va afișa?\n\nlista = [0, False, "", [], None]\nfor elem in lista:\n    if elem:\n        print("Truthy")\n    else:\n        print("Falsy")',
-        correctAnswer: 'Falsy\\nFalsy\\nFalsy\\nFalsy\\nFalsy',
-        explanation: 'Toate elementele sunt "falsy" (0, False, "", [], None). Afișează "Falsy" 5 ori.'
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: lista = [0, False, "", [], None] \\ Câte "falsy" sunt?',
+        options: [
+            '5',
+            '0',
+            '3',
+            'Error'
+        ],
+        correctAnswer: '5',
+        explanation: 'Toate elementele sunt "falsy" (0, False, "", [], None). 5 falsy values.'
     },
     {
-        id: 'python_138',
+        id: 'python_127',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nfruit = ["măr", "banană", "portocală"]\nfruit.clear()\nprint(fruit)',
+        question: 'Ce va afișa: fruit = ["măr", "banană", "portocală"] \\ fruit.clear() \\ print(fruit)?',
+        options: [
+            '[]',
+            '[\'măr\', \'banană\', \'portocală\']',
+            'None',
+            'Error'
+        ],
         correctAnswer: '[]',
         explanation: '.clear() șterge toți elementele. Lista devine goală: []'
     },
     {
-        id: 'python_139',
+        id: 'python_128',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nlista1 = [1, 2, 3]\nlista2 = lista1\nlista2[0] = 10\nprint(lista1)',
+        question: 'Ce va afișa: lista1 = [1, 2, 3] \\ lista2 = lista1 \\ lista2[0] = 10 \\ print(lista1)?',
+        options: [
+            '[10, 2, 3]',
+            '[1, 2, 3]',
+            'Error',
+            '[10, 2, 3] și [1, 2, 3]'
+        ],
         correctAnswer: '[10, 2, 3]',
         explanation: 'Referință. lista1 și lista2 arată la același obiect. Modificarea afectează ambele.'
     },
     {
-        id: 'python_140',
+        id: 'python_129',
         category: 'Liste',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'hard',
-        question: 'Ce va afișa?\n\nnumere = [5, 2, 8, 1, 9]\nsorted_desc = sorted(numere, reverse=True)\nprint(sorted_desc)',
+        question: 'Ce va afișa: numere = [5, 2, 8, 1, 9] \\ sorted_desc = sorted(numere, reverse=True) \\ print(sorted_desc)?',
+        options: [
+            '[9, 8, 5, 2, 1]',
+            '[1, 2, 5, 8, 9]',
+            '[5, 2, 8, 1, 9]',
+            'Error'
+        ],
         correctAnswer: '[9, 8, 5, 2, 1]',
         explanation: 'sorted(..., reverse=True) sortează descrescător. [9, 8, 5, 2, 1]'
     },
     {
-        id: 'python_141',
+        id: 'python_130',
         category: 'Liste',
-        type: 'medium',
-        type: 'text-complete',
+        type: 'multiple-choice',
         difficulty: 'medium',
-        question: 'Ce va afișa?\n\nwords = ["python", "java", "c++"]\nresult = [w.upper() for w in words]\nprint(result)',
+        question: 'Ce va afișa: words = ["python", "java", "c++"] \\ result = [w.upper() for w in words] \\ print(result)?',
+        options: [
+            '[\'PYTHON\', \'JAVA\', \'C++\']',
+            '[\'python\', \'java\', \'c++\']',
+            '[\'Python\', \'Java\', \'C++\']',
+            'Error'
+        ],
         correctAnswer: '[\'PYTHON\', \'JAVA\', \'C++\']',
         explanation: 'List comprehension cu .upper(). Transformă în majuscule.'
-    },
-    {
-        id: 'python_142',
-        category: 'Liste',
-        type: 'text-complete',
-        difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3, 4, 5, 6]\nfiltrate = [x for x in numere if x > 3]\nprint(filtrate)',
-        correctAnswer: '[4, 5, 6]',
-        explanation: 'List comprehension cu condiție. Filtrează > 3: [4, 5, 6]'
-    },
-    {
-        id: 'python_143',
-        category: 'Liste',
-        type: 'text-complete',
-        difficulty: 'hard',
-        question: 'Ce va afișa?\n\nnumere = [3, 1, 4, 1, 5, 9, 2, 6]\ncount_1 = numere.count(1)\nprint(count_1)',
-        correctAnswer: '2',
-        explanation: '.count(1) numără apariții. 1 apare de 2 ori.'
-    },
-    {
-        id: 'python_144',
-        category: 'Liste',
-        type: 'text-complete',
-        difficulty: 'medium',
-        question: 'Ce va afișa?\n\nziua_saptamanii = ["Luni", "Marți", "Miercuri"]\nindex_marți = ziua_saptamanii.index("Marți")\nprint(index_marți)',
-        correctAnswer: '1',
-        explanation: '.index("Marți") returnează poziția. "Marți" e la index 1.'
-    },
-    {
-        id: 'python_145',
-        category: 'Liste',
-        type: 'text-complete',
-        difficulty: 'medium',
-        question: 'Ce va afișa?\n\nnumere = [1, 2, 3]\nfor i in range(len(numere)):\n    print(numere[i])',
-        correctAnswer: '1\\n2\\n3',
-        explanation: 'Loop cu range(len()). Iterează prin indici și afișează fiecare element.'
-    },
-    {
-        id: 'python_146',
-        category: 'Liste',
-        type: 'text-complete',
-        difficulty: 'medium',
-        question: 'Ce va afișa?\n\ncolors = ["roșu", "verde", "albastru"]\ncolors[1] = "galben"\nprint(colors)',
-        correctAnswer: '[\'roșu\', \'galben\', \'albastru\']',
-        explanation: 'Modificare element. Index 1 ("verde") devine "galben".'
     }
 ];
