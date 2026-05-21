@@ -7,6 +7,7 @@ import QuizEngine from './core/quizEngine.js';
 import Scorer from './core/scorer.js';
 import { renderHome, renderQuiz, renderResults, renderFeedback } from './ui/render.js';
 import { cplusplus } from './data/cpp.js';
+import { python } from './data/python.js';
 
 export default class App {
     constructor() {
@@ -32,8 +33,13 @@ export default class App {
                 icon: '⚙️',
                 description: 'Programare pentru începători',
                 data: cplusplus
+            },
+            'python': {
+                name: 'Python',
+                icon: '🐍',
+                description: 'Python pentru clasa a 7-a',
+                data: python
             }
-            // Voi adăuga mai tarziu: Python, Java, JavaScript, C#
         };
         
         // Inițializez teme
