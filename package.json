@@ -1,0 +1,28 @@
+{
+  "name": "code-quiz",
+  "version": "1.0.0",
+  "description": "Platformă de teste interactive pentru programatori în dezvoltare",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 8000 -c-1",
+    "start": "http-server -p 8000",
+    "build": "echo 'Static site - no build needed'",
+    "lint": "echo 'Optional: add eslint'"
+  },
+  "keywords": [
+    "quiz",
+    "programming",
+    "education",
+    "c++",
+    "learning"
+  ],
+  "author": "CodeQuiz Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/test_meditatie.git"
+  }
+}

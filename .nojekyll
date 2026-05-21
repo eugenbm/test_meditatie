@@ -1,0 +1,5 @@
+# GitHub Pages Configuration File
+# Place in root directory for custom configuration
+
+# Jekyll processing (we don't use Jekyll)
+# Add this to prevent Jekyll from processing the site
