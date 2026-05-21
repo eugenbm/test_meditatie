@@ -96,6 +96,78 @@ export function renderQuiz(question, currentNumber, totalQuestions, language) {
 }
 
 /**
+ * Renderizează feedback screen după fiecare răspuns
+ */
+export function renderFeedback(question, userAnswer, currentNumber, totalQuestions) {
+    const isCorrect = userAnswer === question.correctAnswer;
+    
+    let html = `
+        <div class="feedback-screen active">
+            <div class="feedback-header">
+                <div class="feedback-icon ${isCorrect ? 'correct' : 'incorrect'}">
+                    ${isCorrect ? '✓' : '✗'}
+                </div>
+                <h1 class="feedback-title">
+                    ${isCorrect ? 'Răspuns Corect!' : 'Răspuns Greșit!'}
+                </h1>
+                <p class="feedback-counter">Întrebarea ${currentNumber} din ${totalQuestions}</p>
+            </div>
+            
+            <div class="feedback-content">
+                <div class="question-section">
+                    <h3>Întrebarea:</h3>
+                    <p class="feedback-question">${question.question}</p>
+                </div>
+    `;
+    
+    if (!isCorrect) {
+        html += `
+                <div class="answer-section wrong-answer">
+                    <div class="answer-label">Răspunsul tău:</div>
+                    <div class="answer-text user-answer">${userAnswer}</div>
+                </div>
+                
+                <div class="answer-section correct-answer">
+                    <div class="answer-label">Răspunsul Corect:</div>
+                    <div class="answer-text">${question.correctAnswer}</div>
+                </div>
+                
+                <div class="explanation-section">
+                    <h3>Explicație:</h3>
+                    <p>${question.explanation}</p>
+                </div>
+        `;
+    } else {
+        html += `
+                <div class="answer-section correct-answer">
+                    <div class="answer-label">Răspunsul tău (corect):</div>
+                    <div class="answer-text">${userAnswer}</div>
+                </div>
+                
+                <div class="explanation-section">
+                    <h3>Explicație:</h3>
+                    <p>${question.explanation}</p>
+                </div>
+        `;
+    }
+    
+    html += `
+            </div>
+            
+            <div class="feedback-actions">
+                ${currentNumber < totalQuestions 
+                    ? `<button class="btn btn-primary btn-large" data-action="next-feedback">Următoarea Întrebare →</button>` 
+                    : `<button class="btn btn-success btn-large" data-action="next-feedback">Finalizează Testul →</button>`
+                }
+                <button class="btn btn-secondary" data-action="back-home">← Acasă</button>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+/**
  * Renderizează results screen
  */
 export function renderResults(results, language) {

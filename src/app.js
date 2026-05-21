@@ -5,12 +5,12 @@
 
 import QuizEngine from './core/quizEngine.js';
 import Scorer from './core/scorer.js';
-import { renderHome, renderQuiz, renderResults } from './ui/render.js';
+import { renderHome, renderQuiz, renderResults, renderFeedback } from './ui/render.js';
 import { cplusplus } from './data/cpp.js';
 
 export default class App {
     constructor() {
-        this.state = 'home'; // home, quiz, results
+        this.state = 'home'; // home, quiz, feedback, results
         this.currentLanguage = null;
         this.quizEngine = null;
         this.scorer = null;
@@ -18,6 +18,8 @@ export default class App {
         this.userAnswers = [];
         this.score = 0;
         this.quizQuestions = [];
+        this.lastAnswer = null;
+        this.lastQuestion = null;
         
         // Elemente DOM
         this.appContainer = document.getElementById('app');
@@ -108,33 +110,43 @@ export default class App {
      */
     answerQuestion(answer) {
         const question = this.getCurrentQuestion();
+        const isCorrect = answer === question.correctAnswer;
+        
         this.userAnswers.push({
             questionId: question.id,
             answer: answer,
-            isCorrect: answer === question.correctAnswer
+            isCorrect: isCorrect
         });
         
         // Calculează scor parțial
-        if (this.userAnswers[this.currentQuestionIndex].isCorrect) {
+        if (isCorrect) {
             this.score += 1;
         }
         
-        // Treci la întrebarea următoare
-        this.nextQuestion();
+        // Salvează răspunsul și întrebarea pentru afișarea feedback-ului
+        this.lastAnswer = answer;
+        this.lastQuestion = question;
+        
+        // Mergi la starea feedback
+        this.state = 'feedback';
+        this.render();
     }
     
     /**
-     * Treci la întrebarea următoare
+     * Continuă la următoarea întrebare după feedback
      */
-    nextQuestion() {
+    continueToNextQuestion() {
         if (this.currentQuestionIndex < this.quizQuestions.length - 1) {
             this.currentQuestionIndex++;
+            this.state = 'quiz';
             this.render();
         } else {
             // Testul a fost finalizat
             this.finishQuiz();
         }
     }
+    
+
     
     /**
      * Finalizează testul și calculează rezultatele
@@ -226,6 +238,13 @@ export default class App {
                 this.quizQuestions.length,
                 this.languages[this.currentLanguage]
             );
+        } else if (this.state === 'feedback') {
+            html += renderFeedback(
+                this.lastQuestion,
+                this.lastAnswer,
+                this.currentQuestionIndex + 1,
+                this.quizQuestions.length
+            );
         } else if (this.state === 'results') {
             html += renderResults(this.results, this.languages[this.currentLanguage]);
         }
@@ -287,6 +306,8 @@ export default class App {
             this.attachHomeEventListeners();
         } else if (this.state === 'quiz') {
             this.attachQuizEventListeners();
+        } else if (this.state === 'feedback') {
+            this.attachFeedbackEventListeners();
         } else if (this.state === 'results') {
             this.attachResultsEventListeners();
         }
@@ -331,6 +352,19 @@ export default class App {
         }
         
         // Butonul de revenit la home
+        document.querySelector('[data-action="back-home"]')?.addEventListener('click', () => {
+            this.goHome();
+        });
+    }
+    
+    /**
+     * Event listeners pentru feedback screen
+     */
+    attachFeedbackEventListeners() {
+        document.querySelector('[data-action="next-feedback"]')?.addEventListener('click', () => {
+            this.continueToNextQuestion();
+        });
+        
         document.querySelector('[data-action="back-home"]')?.addEventListener('click', () => {
             this.goHome();
         });
