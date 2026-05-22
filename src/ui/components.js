@@ -82,7 +82,7 @@ function renderTrueFalse(question) {
                 <input 
                     type="radio" 
                     name="question_${question.id}" 
-                    value="true"
+                    value="Adevărat"
                     data-option-id="true_${question.id}"
                 >
                 <span class="option-text">Adevărat</span>
@@ -91,7 +91,7 @@ function renderTrueFalse(question) {
                 <input 
                     type="radio" 
                     name="question_${question.id}" 
-                    value="false"
+                    value="Fals"
                     data-option-id="false_${question.id}"
                 >
                 <span class="option-text">Fals</span>

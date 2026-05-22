@@ -1182,13 +1182,13 @@ export const python = [
         difficulty: 'easy',
         question: 'Ce va afișa codul?\nfor i in range(3):\n    print("*" * (i + 1))',
         options: [
-            '* ** ***',
+            'Pe 3 linii: *, **, ***',
             '*** ** *',
             '***',
             'Error'
         ],
-        correctAnswer: '* ** ***',
-        explanation: 'Creează un triunghi. i=0: "*", i=1: "**", i=2: "***".'
+        correctAnswer: 'Pe 3 linii: *, **, ***',
+        explanation: 'print() face newline după fiecare. Output: * (enter) ** (enter) ***'
     },
     {
         id: 'python_085',
@@ -1493,13 +1493,13 @@ export const python = [
         difficulty: 'easy',
         question: 'Ce va afișa: for num in [1, 2, 3]: \\ print(num)?',
         options: [
-            '1 2 3',
+            'Pe 3 linii: 1, 2, 3',
             '[1, 2, 3]',
             '1',
             'Error'
         ],
-        correctAnswer: '1 2 3',
-        explanation: 'for iterează prin liste. Afișează fiecare element.'
+        correctAnswer: 'Pe 3 linii: 1, 2, 3',
+        explanation: 'for iterează și print() pe fiecare valoare. Output: 1 (enter) 2 (enter) 3'
     },
     {
         id: 'python_106',
@@ -1733,13 +1733,13 @@ export const python = [
         difficulty: 'medium',
         question: 'Ce va afișa: fruit = ["măr", "portocală", "banană"] \\ for i, fruct in enumerate(fruit): print(i, fruct)?',
         options: [
-            '0 măr \\ 1 portocală \\ 2 banană',
+            'Pe 3 linii: 0 măr, 1 portocală, 2 banană',
             'măr portocală banană',
             '1 măr 2 portocală 3 banană',
             'Error'
         ],
-        correctAnswer: '0 măr \\ 1 portocală \\ 2 banană',
-        explanation: 'enumerate() dă index și valoare. Afișează: 0 măr, 1 portocală, 2 banană'
+        correctAnswer: 'Pe 3 linii: 0 măr, 1 portocală, 2 banană',
+        explanation: 'enumerate() dă index și valoare. Afișează pe linii separate: 0 măr (enter) 1 portocală (enter) 2 banană'
     },
     {
         id: 'python_122',
@@ -1875,5 +1875,1065 @@ export const python = [
         ],
         correctAnswer: '[\'PYTHON\', \'JAVA\', \'C++\']',
         explanation: 'List comprehension cu .upper(). Transformă în majuscule.'
+    },
+
+    // ===== DICȚIONARE - 20 ÎNTREBĂRI =====
+    {
+        id: 'python_131',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce este un dicționar în Python?',
+        options: [
+            'O colecție de perechi cheie-valoare',
+            'O listă ordonată',
+            'Un set de numere',
+            'O funcție'
+        ],
+        correctAnswer: 'O colecție de perechi cheie-valoare',
+        explanation: 'Dicționarul stochează date ca {cheie: valoare}. De ex: {"nume": "Ana", "vârstă": 12}'
+    },
+    {
+        id: 'python_132',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: d = {"a": 1, "b": 2} \\ print(d["a"])?',
+        options: [
+            '1',
+            '"a"',
+            '2',
+            'Error'
+        ],
+        correctAnswer: '1',
+        explanation: 'd["a"] accesează valoarea pentru cheia "a", care e 1.'
+    },
+    {
+        id: 'python_133',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: d = {"nume": "Ion"} \\ d["vârstă"] = 14 \\ print(d)?',
+        options: [
+            '{\'nume\': \'Ion\', \'vârstă\': 14}',
+            '{\'nume\': \'Ion\'}',
+            'Error',
+            '{\'vârstă\': 14}'
+        ],
+        correctAnswer: '{\'nume\': \'Ion\', \'vârstă\': 14}',
+        explanation: 'Adaug o cheie nouă. Dicționarul se extinde.'
+    },
+    {
+        id: 'python_134',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: d = {1: "a", 2: "b"} \\ print(d.keys())?',
+        options: [
+            'dict_keys([1, 2])',
+            '[1, 2]',
+            '"a", "b"',
+            'Error'
+        ],
+        correctAnswer: 'dict_keys([1, 2])',
+        explanation: '.keys() returnează toate cheile din dicționar.'
+    },
+    {
+        id: 'python_135',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: d = {1: "a", 2: "b"} \\ print(d.values())?',
+        options: [
+            'dict_values([\'a\', \'b\'])',
+            '[\'a\', \'b\']',
+            '[1, 2]',
+            'Error'
+        ],
+        correctAnswer: 'dict_values([\'a\', \'b\'])',
+        explanation: '.values() returnează toate valorile din dicționar.'
+    },
+    {
+        id: 'python_136',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: d = {"a": 1, "b": 2} \\ print(len(d))?',
+        options: [
+            '2',
+            '1',
+            '3',
+            'Error'
+        ],
+        correctAnswer: '2',
+        explanation: 'len(d) returnează numărul de perechi cheie-valoare: 2'
+    },
+    {
+        id: 'python_137',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: d = {"a": 1} \\ print("a" in d)?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '1'
+        ],
+        correctAnswer: 'True',
+        explanation: 'in verifică dacă cheie există. "a" e cheie în d, deci True.'
+    },
+    {
+        id: 'python_138',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: d = {"a": 1, "b": 2} \\ d.pop("a") \\ print(d)?',
+        options: [
+            '{\'b\': 2}',
+            '{\'a\': 1, \'b\': 2}',
+            'Error',
+            '1'
+        ],
+        correctAnswer: '{\'b\': 2}',
+        explanation: '.pop("a") șterge cheia "a". Dicționarul: {\'b\': 2}'
+    },
+    {
+        id: 'python_139',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"x": 10, "y": 20} \\ for key in d: print(key)?',
+        options: [
+            'Pe 2 linii: x, y',
+            '10 20',
+            'x y 10 20',
+            'Error'
+        ],
+        correctAnswer: 'Pe 2 linii: x, y',
+        explanation: 'Loop iterează cheile. print() face newline. Output: x (enter) y'
+    },
+    {
+        id: 'python_140',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"x": 10, "y": 20} \\ for value in d.values(): print(value)?',
+        options: [
+            'Pe 2 linii: 10, 20',
+            'x y',
+            'Error',
+            '10'
+        ],
+        correctAnswer: 'Pe 2 linii: 10, 20',
+        explanation: '.values() iterează valorile. print() pe fiecare linie. Output: 10 (enter) 20'
+    },
+    {
+        id: 'python_141',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"a": 1, "b": 2} \\ print(d.get("a"))?',
+        options: [
+            '1',
+            'None',
+            'Error',
+            '"a"'
+        ],
+        correctAnswer: '1',
+        explanation: '.get("a") returnează valoarea pentru cheia "a": 1'
+    },
+    {
+        id: 'python_142',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"a": 1, "b": 2} \\ print(d.get("c", "nu exista"))?',
+        options: [
+            'nu exista',
+            'None',
+            'Error',
+            '"c"'
+        ],
+        correctAnswer: 'nu exista',
+        explanation: '.get("c", default) returnează valoare default dacă cheie nu există.'
+    },
+    {
+        id: 'python_143',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"a": 1} \\ d.update({"b": 2}) \\ print(d)?',
+        options: [
+            '{\'a\': 1, \'b\': 2}',
+            '{\'b\': 2}',
+            'Error',
+            '{\'a\': 1}'
+        ],
+        correctAnswer: '{\'a\': 1, \'b\': 2}',
+        explanation: '.update() adaugă perechi dintr-un alt dicționar.'
+    },
+    {
+        id: 'python_144',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"a": 1, "b": 2} \\ print(d.items())?',
+        options: [
+            'dict_items([(\'a\', 1), (\'b\', 2)])',
+            '[\'a\', \'b\']',
+            '[1, 2]',
+            'Error'
+        ],
+        correctAnswer: 'dict_items([(\'a\', 1), (\'b\', 2)])',
+        explanation: '.items() returnează perechi cheie-valoare.'
+    },
+    {
+        id: 'python_145',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"a": 1, "b": 2} \\ for k, v in d.items(): print(k, v)?',
+        options: [
+            'Pe 2 linii: a 1, b 2',
+            '1 2',
+            'a b',
+            'Error'
+        ],
+        correctAnswer: 'Pe 2 linii: a 1, b 2',
+        explanation: '.items() cu unpacking: iterează perechi. Output: a 1 (enter) b 2'
+    },
+    {
+        id: 'python_146',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'hard',
+        question: 'Ce va afișa: d = {"a": {"x": 1}} \\ print(d["a"]["x"])?',
+        options: [
+            '1',
+            '{"x": 1}',
+            'Error',
+            '"a"'
+        ],
+        correctAnswer: '1',
+        explanation: 'Dicționar imbricat. d["a"]["x"] accesează valoare din dicționarul imbricat.'
+    },
+    {
+        id: 'python_147',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: d = {} \\ print(len(d))?',
+        options: [
+            '0',
+            '1',
+            'Error',
+            '"empty"'
+        ],
+        correctAnswer: '0',
+        explanation: 'Dicționar gol are lungimea 0.'
+    },
+    {
+        id: 'python_148',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"a": 1, "b": 2} \\ d.clear() \\ print(d)?',
+        options: [
+            '{}',
+            '{\'a\': 1, \'b\': 2}',
+            'Error',
+            'None'
+        ],
+        correctAnswer: '{}',
+        explanation: '.clear() șterge toate elementele. Dicționarul devine gol.'
+    },
+    {
+        id: 'python_149',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"a": [1, 2, 3]} \\ print(d["a"][0])?',
+        options: [
+            '1',
+            '[1, 2, 3]',
+            '0',
+            'Error'
+        ],
+        correctAnswer: '1',
+        explanation: 'Dicționar cu valoare lista. d["a"][0] = primul element din lista.'
+    },
+    {
+        id: 'python_150',
+        category: 'Dicționare',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: d = {"a": 1, "b": 2, "c": 3} \\ print(max(d.values()))?',
+        options: [
+            '3',
+            '2',
+            '1',
+            'Error'
+        ],
+        correctAnswer: '3',
+        explanation: 'max(d.values()) returnează valoarea maximă din dicționar: 3'
+    },
+
+    // ===== FUNCȚII - 20 ÎNTREBĂRI =====
+    {
+        id: 'python_151',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce este o funcție în Python?',
+        options: [
+            'Un bloc de cod reutilizabil',
+            'O variabilă',
+            'O buclă',
+            'O condiție'
+        ],
+        correctAnswer: 'Un bloc de cod reutilizabil',
+        explanation: 'Funcția e un set de instrucțiuni care se pot apela de mai multe ori.'
+    },
+    {
+        id: 'python_152',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: def saluteaza(): \\ print("Salut") \\ saluteaza()?',
+        options: [
+            'Salut',
+            'saluteaza',
+            'Error',
+            'None'
+        ],
+        correctAnswer: 'Salut',
+        explanation: 'Funcția saluteaza() se apelează și afișează "Salut".'
+    },
+    {
+        id: 'python_153',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: def aduna(a, b): \\ return a + b \\ print(aduna(3, 5))?',
+        options: [
+            '8',
+            '3',
+            '5',
+            'Error'
+        ],
+        correctAnswer: '8',
+        explanation: 'Funcția return-eaza suma. aduna(3, 5) = 8'
+    },
+    {
+        id: 'python_154',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce sunt parametrii unei funcții?',
+        options: [
+            'Variabile care primesc valori când funcția e apelată',
+            'Variabile globale',
+            'Variabile în return',
+            'Variabile locale'
+        ],
+        correctAnswer: 'Variabile care primesc valori când funcția e apelată',
+        explanation: 'def saluteaza(nume): - "nume" e parametru.'
+    },
+    {
+        id: 'python_155',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: def greet(name): \\ print("Salut " + name) \\ greet("Ana")?',
+        options: [
+            'Salut Ana',
+            'Salut',
+            'Ana',
+            'Error'
+        ],
+        correctAnswer: 'Salut Ana',
+        explanation: 'Funcția folosește parametrul "name". greet("Ana") afișează "Salut Ana".'
+    },
+    {
+        id: 'python_156',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce este return în o funcție?',
+        options: [
+            'Returnează o valoare și termină funcția',
+            'Intoarce la home',
+            'Repetă funcția',
+            'Creeaza o buclă'
+        ],
+        correctAnswer: 'Returnează o valoare și termină funcția',
+        explanation: 'return oprește execuția și trimite valoarea înapoi.'
+    },
+    {
+        id: 'python_157',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: def dubleaza(x): \\ return x * 2 \\ print(dubleaza(5))?',
+        options: [
+            '10',
+            '5',
+            '2',
+            'Error'
+        ],
+        correctAnswer: '10',
+        explanation: 'Funcția return-eaza x * 2. dubleaza(5) = 10'
+    },
+    {
+        id: 'python_158',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: def suma(a, b, c): \\ return a + b + c \\ print(suma(1, 2, 3))?',
+        options: [
+            '6',
+            '3',
+            '1',
+            'Error'
+        ],
+        correctAnswer: '6',
+        explanation: 'Funcția cu 3 parametri. suma(1, 2, 3) = 1 + 2 + 3 = 6'
+    },
+    {
+        id: 'python_159',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce sunt argumente implicite (default)?',
+        options: [
+            'Valori pe care parametrii le au dacă nu sunt trecute',
+            'Argumente obligatorii',
+            'Parametri globali',
+            'Parametri locali'
+        ],
+        correctAnswer: 'Valori pe care parametrii le au dacă nu sunt trecute',
+        explanation: 'def greet(name="Prietenule"): - "Prietenule" e valoare implicită.'
+    },
+    {
+        id: 'python_160',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: def greet(name="Guest"): \\ print(name) \\ greet()?',
+        options: [
+            'Guest',
+            'Error',
+            'None',
+            'name'
+        ],
+        correctAnswer: 'Guest',
+        explanation: 'Dacă nu trec argument, foloseste valoarea implicită "Guest".'
+    },
+    {
+        id: 'python_161',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: def factorial(n): \\ if n <= 1: return 1 \\ return n * factorial(n-1) \\ print(factorial(4))?',
+        options: [
+            '24',
+            '4',
+            '1',
+            'Error'
+        ],
+        correctAnswer: '24',
+        explanation: 'Recursivitate: factorial(4) = 4 * 3 * 2 * 1 = 24'
+    },
+    {
+        id: 'python_162',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce este o variabilă locală?',
+        options: [
+            'Variabilă declarată în funcție (doar în funcție)',
+            'Variabilă globală',
+            'Variabilă în main',
+            'Parametru'
+        ],
+        correctAnswer: 'Variabilă declarată în funcție (doar în funcție)',
+        explanation: 'Variabile locale nu sunt accesibile în afara funcției.'
+    },
+    {
+        id: 'python_163',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce sunt *args într-o funcție?',
+        options: [
+            'Argumente în număr variabil',
+            'Un argument obligator',
+            'Dicționar de argumente',
+            'O variabilă globală'
+        ],
+        correctAnswer: 'Argumente în număr variabil',
+        explanation: '*args permite funcției să accepte oricâte argumente. De ex: def suma(*args): return sum(args)'
+    },
+    {
+        id: 'python_164',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: x = 5 \\ def modify(): \\ global x \\ x = 10 \\ modify() \\ print(x)?',
+        options: [
+            '10',
+            '5',
+            'Error',
+            'None'
+        ],
+        correctAnswer: '10',
+        explanation: 'global permite modificare variabilă globală din funcție.'
+    },
+    {
+        id: 'python_165',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: def f(): \\ return "Hello" \\ print(f())?',
+        options: [
+            'Hello',
+            'f',
+            'Error',
+            'None'
+        ],
+        correctAnswer: 'Hello',
+        explanation: 'Funcția returnează "Hello", print o afișează.'
+    },
+    {
+        id: 'python_166',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: def test(a, b=5): \\ return a + b \\ print(test(3))?',
+        options: [
+            '8',
+            '3',
+            'Error',
+            '5'
+        ],
+        correctAnswer: '8',
+        explanation: 'b are valoare implicită 5. test(3) = 3 + 5 = 8'
+    },
+    {
+        id: 'python_167',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: def isEven(n): \\ return n % 2 == 0 \\ print(isEven(4))?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '0'
+        ],
+        correctAnswer: 'True',
+        explanation: '4 % 2 == 0 e True, deci funcția returnează True.'
+    },
+    {
+        id: 'python_168',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'hard',
+        question: 'Ce este o funcție lambda?',
+        options: [
+            'O funcție anonimă pe o linie',
+            'O funcție cu parametri',
+            'O funcție recursivă',
+            'O buclă'
+        ],
+        correctAnswer: 'O funcție anonimă pe o linie',
+        explanation: 'Lambda e funcție fără nume: lambda x: x * 2'
+    },
+    {
+        id: 'python_169',
+        category: 'Funcții',
+        type: 'multiple-choice',
+        difficulty: 'hard',
+        question: 'Ce va afișa: f = lambda x: x ** 2 \\ print(f(5))?',
+        options: [
+            '25',
+            '5',
+            '2',
+            'Error'
+        ],
+        correctAnswer: '25',
+        explanation: 'Lambda x: x ** 2. f(5) = 5 ** 2 = 25'
+    },
+
+    // ===== STRING METHODS - 20 ÎNTREBĂRI =====
+    {
+        id: 'python_170',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "python" \\ print(s.find("o"))?',
+        options: [
+            '4',
+            '0',
+            '5',
+            'Error'
+        ],
+        correctAnswer: '4',
+        explanation: '.find() returnează index: p(0)y(1)t(2)h(3)o(4)n(5) → 4'
+    },
+    {
+        id: 'python_171',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "python python" \\ print(s.replace("python", "java"))?',
+        options: [
+            'java java',
+            'python java',
+            'python python',
+            'Error'
+        ],
+        correctAnswer: 'java java',
+        explanation: '.replace() înlocuiește toate apariții: "python" → "java"'
+    },
+    {
+        id: 'python_172',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "hello world" \\ print(s.split())?',
+        options: [
+            '[\'hello\', \'world\']',
+            '\'hello\' \'world\'',
+            'hello world',
+            'Error'
+        ],
+        correctAnswer: '[\'hello\', \'world\']',
+        explanation: '.split() imparte string în listă după spații.'
+    },
+    {
+        id: 'python_173',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "a-b-c" \\ print(s.split("-"))?',
+        options: [
+            '[\'a\', \'b\', \'c\']',
+            '[\'a-b-c\']',
+            'a-b-c',
+            'Error'
+        ],
+        correctAnswer: '[\'a\', \'b\', \'c\']',
+        explanation: '.split("-") imparte după "-": ["a", "b", "c"]'
+    },
+    {
+        id: 'python_174',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: lista = ["a", "b", "c"] \\ print("-".join(lista))?',
+        options: [
+            'a-b-c',
+            'abc',
+            '[a, b, c]',
+            'Error'
+        ],
+        correctAnswer: 'a-b-c',
+        explanation: '.join() unește lista cu separator "-"'
+    },
+    {
+        id: 'python_175',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "  hello  " \\ print(s.strip())?',
+        options: [
+            'hello',
+            '  hello  ',
+            'hello  ',
+            'Error'
+        ],
+        correctAnswer: 'hello',
+        explanation: '.strip() elimina spații la început și sfârșit.'
+    },
+    {
+        id: 'python_176',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "hello" \\ print(s.startswith("he"))?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '0'
+        ],
+        correctAnswer: 'True',
+        explanation: '.startswith() verifică dacă string începe cu "he": True'
+    },
+    {
+        id: 'python_177',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "hello" \\ print(s.endswith("lo"))?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '4'
+        ],
+        correctAnswer: 'True',
+        explanation: '.endswith() verifică dacă string se termină cu "lo": True'
+    },
+    {
+        id: 'python_178',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "hello world" \\ print(s.count("o"))?',
+        options: [
+            '2',
+            '1',
+            '0',
+            'Error'
+        ],
+        correctAnswer: '2',
+        explanation: '.count() numără apariții: "hello world" are 2 "o"'
+    },
+    {
+        id: 'python_179',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "hello" \\ print(s.capitalize())?',
+        options: [
+            'Hello',
+            'HELLO',
+            'hello',
+            'Error'
+        ],
+        correctAnswer: 'Hello',
+        explanation: '.capitalize() face prima literă majusculă: "Hello"'
+    },
+    {
+        id: 'python_180',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "Hello World" \\ print(s.title())?',
+        options: [
+            'Hello World',
+            'HELLO WORLD',
+            'hello world',
+            'Error'
+        ],
+        correctAnswer: 'Hello World',
+        explanation: '.title() face fiecare cuvânt cu majusculă.'
+    },
+    {
+        id: 'python_181',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "hello" \\ print(s.isdigit())?',
+        options: [
+            'False',
+            'True',
+            'Error',
+            'None'
+        ],
+        correctAnswer: 'False',
+        explanation: '.isdigit() verifică dacă string conține numai cifre: False'
+    },
+    {
+        id: 'python_182',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "12345" \\ print(s.isdigit())?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '5'
+        ],
+        correctAnswer: 'True',
+        explanation: '.isdigit() pe "12345" returnează True.'
+    },
+    {
+        id: 'python_183',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'easy',
+        question: 'Ce va afișa: s = "hello" \\ print(s.isalpha())?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '0'
+        ],
+        correctAnswer: 'True',
+        explanation: '.isalpha() verifică dacă string conține numai litere: True'
+    },
+    {
+        id: 'python_184',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: s = "hello" \\ print(s.index("l"))?',
+        options: [
+            '2',
+            '3',
+            '0',
+            'Error'
+        ],
+        correctAnswer: '2',
+        explanation: '.index() returnează index: h(0)e(1)l(2)lo'
+    },
+    {
+        id: 'python_185',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: s = "hello" \\ print(s[1:3])?',
+        options: [
+            'el',
+            'he',
+            'llo',
+            'Error'
+        ],
+        correctAnswer: 'el',
+        explanation: 's[1:3] = h(0)e(1)l(2)lo - indexuri 1-2: "el"'
+    },
+    {
+        id: 'python_186',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: s = "Python" \\ print(s.isupper())?',
+        options: [
+            'False',
+            'True',
+            'Error',
+            'None'
+        ],
+        correctAnswer: 'False',
+        explanation: '.isupper() verifică dacă toate sunt majuscule: False (p e minusculă)'
+    },
+    {
+        id: 'python_187',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: s = "PYTHON" \\ print(s.islower())?',
+        options: [
+            'False',
+            'True',
+            'Error',
+            'None'
+        ],
+        correctAnswer: 'False',
+        explanation: '.islower() verifică dacă toate sunt minuscule: False'
+    },
+    {
+        id: 'python_188',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: s = "hello world" \\ print(" " in s)?',
+        options: [
+            'True',
+            'False',
+            'Error',
+            '1'
+        ],
+        correctAnswer: 'True',
+        explanation: 'in verifică dacă " " (spațiu) e în string: True'
+    },
+    {
+        id: 'python_189',
+        category: 'String Methods',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce va afișa: s = "hello" \\ print(s * 3)?',
+        options: [
+            'hellohellohello',
+            'hello3',
+            '3 hello',
+            'Error'
+        ],
+        correctAnswer: 'hellohellohello',
+        explanation: '* pentru string = repetare: "hello" * 3 = "hellohellohello"'
+    },
+
+    // ===== FILE I/O - 10 ÎNTREBĂRI =====
+    {
+        id: 'python_190',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce face open("file.txt", "r")?',
+        options: [
+            'Deschide fișier în modul citire',
+            'Deschide fișier în modul scriere',
+            'Șterge fișierul',
+            'Creează fișier nou'
+        ],
+        correctAnswer: 'Deschide fișier în modul citire',
+        explanation: '"r" = read mode. Permite citire fișierului.'
+    },
+    {
+        id: 'python_191',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce face open("file.txt", "w")?',
+        options: [
+            'Deschide fișier în modul scriere (suprascrie)',
+            'Deschide fișier în modul citire',
+            'Adaugă la fișier',
+            'Error'
+        ],
+        correctAnswer: 'Deschide fișier în modul scriere (suprascrie)',
+        explanation: '"w" = write mode. Suprascrie conținutul fișierului.'
+    },
+    {
+        id: 'python_192',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce face open("file.txt", "a")?',
+        options: [
+            'Adaugă la sfârșitul fișierului',
+            'Citește fișierul',
+            'Șterge fișierul',
+            'Error'
+        ],
+        correctAnswer: 'Adaugă la sfârșitul fișierului',
+        explanation: '"a" = append mode. Adaugă text la sfârșitul fișierului.'
+    },
+    {
+        id: 'python_193',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce face file.read()?',
+        options: [
+            'Citește întreg conținutul fișierului',
+            'Citește o linie',
+            'Citește un caracter',
+            'Error'
+        ],
+        correctAnswer: 'Citește întreg conținutul fișierului',
+        explanation: '.read() returnează întreg conținutul ca string.'
+    },
+    {
+        id: 'python_194',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce face file.readline()?',
+        options: [
+            'Citește o linie din fișier',
+            'Citește întreg fișierul',
+            'Citește un caracter',
+            'Error'
+        ],
+        correctAnswer: 'Citește o linie din fișier',
+        explanation: '.readline() returnează o linie cu "\\n" la final.'
+    },
+    {
+        id: 'python_195',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce face file.readlines()?',
+        options: [
+            'Citește toate liniile în listă',
+            'Citește o linie',
+            'Citește un caracter',
+            'Error'
+        ],
+        correctAnswer: 'Citește toate liniile în listă',
+        explanation: '.readlines() returnează lista de linii.'
+    },
+    {
+        id: 'python_196',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce face file.write("text")?',
+        options: [
+            'Scrie text în fișier',
+            'Citește text din fișier',
+            'Șterge fișierul',
+            'Error'
+        ],
+        correctAnswer: 'Scrie text în fișier',
+        explanation: '.write() scrie text în fișier deschis în mod "w" sau "a".'
+    },
+    {
+        id: 'python_197',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'medium',
+        question: 'Ce face file.close()?',
+        options: [
+            'Închide fișierul și eliberează resurse',
+            'Deschide fișierul',
+            'Șterge fișierul',
+            'Error'
+        ],
+        correctAnswer: 'Închide fișierul și eliberează resurse',
+        explanation: '.close() trebuie apelată după fiecare operație cu fișier.'
+    },
+    {
+        id: 'python_198',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'hard',
+        question: 'Ce este context manager (with)?',
+        options: [
+            'Deschide și închide automat fișierul',
+            'Citeşte fişierul',
+            'Scrie în fișier',
+            'Error'
+        ],
+        correctAnswer: 'Deschide și închide automat fișierul',
+        explanation: 'with open(...) as f: - auto-închide fișierul la final.'
+    },
+    {
+        id: 'python_199',
+        category: 'File I/O',
+        type: 'multiple-choice',
+        difficulty: 'hard',
+        question: 'Cum verifici dacă fișier există?',
+        options: [
+            'import os; os.path.exists("file.txt")',
+            'file.exists()',
+            'open("file.txt").exists()',
+            'Error'
+        ],
+        correctAnswer: 'import os; os.path.exists("file.txt")',
+        explanation: 'os.path.exists() returnează True/False.'
+    },
+
+    // ===== ADVANCED PYTHON - 10 ÎNTREBĂRI =====
+    {
+        id: 'python_200',
+        category: 'Advanced',
+        type: 'multiple-choice',
+        difficulty: 'hard',
+        question: 'Ce este list comprehension?',
+        options: [
+            'Creare lista în o singură linie cu condiție',
+            'O buclă for',
+            'O funcție',
+            'Un dicționar'
+        ],
+        correctAnswer: 'Creare lista în o singură linie cu condiție',
+        explanation: '[x for x in range(10) if x % 2 == 0] - creează lista de numere pare.'
     }
 ];

@@ -11,7 +11,7 @@ import { renderLanguageCard, renderQuestionCard, renderResultsCard, renderReview
 /**
  * Renderizează home screen
  */
-export function renderHome(languages, stats) {
+export function renderHome(languages, stats, srSummary = null) {
     let html = `
         <div class="home-screen active">
             <div class="welcome-section">
@@ -19,7 +19,37 @@ export function renderHome(languages, stats) {
                 <h1 class="welcome-title">Bine ai venit la CodeQuiz!</h1>
                 <p class="welcome-subtitle">Învață și testează-ți cunoștințele de programare</p>
             </div>
+    `;
+
+    // 📊 Spaced Repetition Summary
+    if (srSummary && srSummary.needsReview > 0) {
+        html += `
+            <div class="review-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; color: white; text-align: center;">
+                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔄</div>
+                <h3 style="margin: 0 0 0.5rem 0;">Repet-ție Diurnă</h3>
+                <p style="margin: 0; font-size: 1.2rem; font-weight: bold;">${srSummary.needsReview} întrebări pentru review azi!</p>
+                <button class="btn btn-primary" data-action="start-review" style="margin-top: 1rem;">Începe Review 📖</button>
+            </div>
+        `;
+    }
+
+    // Spaced Repetition Stats
+    if (srSummary) {
+        html += `
+            <div class="sr-stats" style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="flex: 1; background: #f0f0f0; padding: 1rem; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: #667eea;">${srSummary.totalReviewed}</div>
+                    <div style="font-size: 0.9rem; color: #666;">Întrebări Revăzute</div>
+                </div>
+                <div style="flex: 1; background: #f0f0f0; padding: 1rem; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: #764ba2;">${srSummary.masteredCount}</div>
+                    <div style="font-size: 0.9rem; color: #666;">Stăpânite (7+ zile)</div>
+                </div>
+            </div>
+        `;
+    }
             
+    html += `
             <div>
                 <h2 style="text-align: center; margin-bottom: 1.5rem;">Selectează un limbaj de programare</h2>
                 <div class="language-grid">

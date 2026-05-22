@@ -51,7 +51,7 @@ int main() {
         difficulty: 'easy',
         type: 'true-false',
         question: '#include <iostream> este obligatoriu pentru a folosi cout și cin.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'iostream furnizează fluxurile standard de intrare și ieșire (cin și cout).'
     },
     {
@@ -93,7 +93,7 @@ int main() {
         difficulty: 'easy',
         type: 'true-false',
         question: 'using namespace std; permite utilizarea std::cout fără prefixul std::',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Directive using namespace std face disponibile toate simbolurile din spațiul de nume std.'
     },
     {
@@ -120,7 +120,7 @@ int main() {
         difficulty: 'easy',
         type: 'true-false',
         question: 'Comentariile în C++ încep cu //',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Comentariile pe o linie încep cu //. Pentru mai multe linii se folosesc /* */'
     },
     {
@@ -156,7 +156,7 @@ int main() {
         difficulty: 'easy',
         type: 'true-false',
         question: 'O variabilă trebuie declarată înainte de a fi folosită.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'În C++, trebuie să declari o variabilă cu tipul ei înainte de a o folosi.'
     },
     {
@@ -208,7 +208,7 @@ int main() {
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot schimba valoarea unei variabile const după inițializare.',
-        correctAnswer: 'false',
+        correctAnswer: 'Fals',
         explanation: 'O variabilă const nu se poate modifica după ce a fost inițializată.'
     },
     
@@ -236,7 +236,7 @@ int main() {
         difficulty: 'easy',
         type: 'true-false',
         question: 'char este un tip de date pentru a stoca caractere unice.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'char stochează un singur caracter (litera, cifră, simbol).'
     },
     {
@@ -262,7 +262,7 @@ int main() {
         difficulty: 'easy',
         type: 'true-false',
         question: 'bool poate stoca doar valorile true sau false.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'bool este un tip de date boolean care stochează true (1) sau false (0).'
     },
     {
@@ -354,7 +354,7 @@ cout << x / y;`,
         difficulty: 'easy',
         type: 'true-false',
         question: '10 % 3 este egal cu 1.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: '10 împărțit la 3 este 3 rest 1. Deci 10 % 3 = 1'
     },
     {
@@ -380,7 +380,7 @@ cout << x / y;`,
         difficulty: 'easy',
         type: 'true-false',
         question: '-- scade 1 din valoare.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: '-- este operatorul de decrement. De ex: x-- scade 1 din x'
     },
     {
@@ -406,7 +406,7 @@ cout << x / y;`,
         difficulty: 'easy',
         type: 'true-false',
         question: '-= se folosește pentru a scădea și atribui o valoare.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: '-= este operatorul de atribuire compusă pentru scădere.'
     },
     {
@@ -448,7 +448,7 @@ cout << x / y;`,
         difficulty: 'easy',
         type: 'true-false',
         question: '> și < sunt operatori de comparație.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: '> (mai mare) și < (mai mic) sunt operatori de comparație.'
     },
     {
@@ -480,7 +480,7 @@ cout << x / y;`,
             '1',
             'error'
         ],
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: '<= înseamnă mai mic sau egal. 3 este egal cu 3, deci rezultatul este true.'
     },
     
@@ -547,7 +547,7 @@ if (x > 5) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'else if permite verificarea unei alte condiții dacă cea anterioară este falsă.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'else if permite verificarea unei condiții noi dacă ramurile anterioare nu sunt satisfăcute.'
     },
     {
@@ -579,7 +579,7 @@ if (x > 5) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'Operatorul && înseamnă SI (AND logic).',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: '&& este operatorul AND. Ambele condiții trebuie să fie true.'
     },
     {
@@ -589,7 +589,7 @@ if (x > 5) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'Operatorul || înseamnă SAU (OR logic).',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: '|| este operatorul OR. Cel puțin una din condiții trebuie să fie true.'
     },
     {
@@ -610,7 +610,7 @@ if (x > 5) {
             'true false',
             'error'
         ],
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Ambele condiții (5 > 3 ȘI 2 > 1) sunt adevărate, deci rezultatul este true.'
     },
     {
@@ -631,7 +631,7 @@ if (x > 5) {
             'true false',
             'error'
         ],
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Chiar dacă prima condiție este falsă, a doua este adevărată. SAU necesită doar una adevărată.'
     },
     
@@ -697,7 +697,7 @@ if (x > 5) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'for (int i = 5; i > 0; i--) va pune i de la 5 la 1.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'i-- decrementează, deci va merge: 5, 4, 3, 2, 1'
     },
     {
@@ -755,7 +755,7 @@ if (x > 5) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'break poate opri o buclă for înainte de a termina.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'break iese din buclă înainte de a ajunge la condiția finală.'
     },
     {
@@ -765,7 +765,7 @@ if (x > 5) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'continue sare peste restul buclei și merge la următoarea iterație.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'continue sare peste codul rămas din iterația curentă și trece la următoare.'
     },
     
@@ -833,7 +833,7 @@ while (i < 3) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'do-while execută codul cel puțin o dată, chiar dacă condiția este falsă.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'do-while verifică condiția după execuție, nu înainte.'
     },
     {
@@ -899,7 +899,7 @@ while (i > 0) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'Indexele unui vector încep de la 1.',
-        correctAnswer: 'false',
+        correctAnswer: 'Fals',
         explanation: 'Indexele încep de la 0. Pentru v[5]: índices 0, 1, 2, 3, 4'
     },
     {
@@ -959,7 +959,7 @@ cout << v[2];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Dimensiunea unui vector nu poate fi schimbată după declarare.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Un vector static nu poate schimba dimensiunea. Pentru redimensionare, se folosesc std::vector.'
     },
     {
@@ -1027,7 +1027,7 @@ cout << v[0] + v[4];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot modifica un element din vector după declarare.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Poți asigna o nouă valoare: v[0] = 100;'
     },
     {
@@ -1069,7 +1069,7 @@ cout << v[0] + v[4];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Un vector poate stoca numere și text în același timp.',
-        correctAnswer: 'false',
+        correctAnswer: 'Fals',
         explanation: 'Un vector cu tip int stochează doar întregi. Pentru tip mixt, se folosesc alte structuri.'
     },
     {
@@ -1190,7 +1190,7 @@ cout << min_val;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Diferența între o variabilă și un vector este că vectorul stochează mai multe valori.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'O variabilă stochează o singură valoare, un vector stochează mai multe.'
     },
     {
@@ -1251,7 +1251,7 @@ cout << v[0];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot declara un vector fără să específic dimensiunea.',
-        correctAnswer: 'false',
+        correctAnswer: 'Fals',
         explanation: 'În C++ standard, trebuie să specifici dimensiunea. std::vector nu necesită asta.'
     },
     {
@@ -1318,7 +1318,7 @@ cout << v[0] << v[2];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot declara un vector de float-uri.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'float v[5]; este o declarație validă.'
     },
     {
@@ -1328,7 +1328,7 @@ cout << v[0] << v[2];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot declara un vector de char-uri.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'char v[5]; declară un vector de caractere.'
     },
     {
@@ -1428,7 +1428,7 @@ cout << v[1];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'int v[5]; declară un vector cu 5 spații neinitialiaze.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Fără inițializare explicită, elementele conțin valori arbitrare.'
     },
     {
@@ -1492,7 +1492,7 @@ cout << sum;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot folosi un vector într-o funcție.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Vectorii se pot transmite ca parametri funcțiilor.'
     },
     {
@@ -1518,7 +1518,7 @@ cout << sum;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'int v[5] = {1}; inițializează doar primul element, restul cu 0.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Inițializarea parțială umple restul cu 0.'
     },
     {
@@ -1551,7 +1551,7 @@ cout << v[3];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Vectorii sunt o structură de date liniară.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Vectorii sunt colecții liniare de elemente identice.'
     },
     {
@@ -1593,7 +1593,7 @@ cout << v[3];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Inițializarea unui vector se face cu acolade.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'int v[] = {1, 2, 3}; sau int v[3] = {1, 2, 3};'
     },
     {
@@ -1651,7 +1651,7 @@ cout << v[3];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot modifica elementele unui vector după inițializare.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Pot rescrie orice element: v[0] = 999;'
     },
     {
@@ -1678,7 +1678,7 @@ cout << v[3];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Doi vectori pot fi comparat direct cu ==',
-        correctAnswer: 'false',
+        correctAnswer: 'Fals',
         explanation: 'Trebuie să compari fiecare element în parte.'
     },
     {
@@ -1721,7 +1721,7 @@ cout << v[3];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot folosi un vector ca parametru al unei funcții.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Se transmit vectorii ca pointeri sau prin referință.'
     },
     {
@@ -1747,7 +1747,7 @@ cout << v[3];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Un vector trebuie să aibă aceeași dimensiune pentru toate tipurile de date.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'int v[5] stochează doar întregi, float v[5] doar float-uri.'
     },
     {
@@ -1792,7 +1792,7 @@ cout << v[1] + v[2];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Indexul unui vector nu poate fi negativ.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Indexii sunt 0, 1, 2... - numere non-negative.'
     },
     {
@@ -1840,7 +1840,7 @@ cout << suma;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Elementele unui vector trebuie să fie consecutive în memorie.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Vectorii sunt alocați într-un bloc continuu de memorie.'
     },
     {
@@ -1898,7 +1898,7 @@ cout << suma;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot citi și afișa vectori cu cin și cout direct.',
-        correctAnswer: 'false',
+        correctAnswer: 'Fals',
         explanation: 'Trebuie să folosesc bucle pentru a citi/afișa fiecare element.'
     },
     {
@@ -1941,7 +1941,7 @@ cout << suma;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot inițializa vectorul fără să specifici dimensiunea dacă specifici valorile.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'int v[] = {1, 2, 3}; dimensiunea se deduce automat: 3.'
     },
     {
@@ -1969,7 +1969,7 @@ cout << (v[2] + v[5]) / 2;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Vectorul este o structură statică cu dimensiune fixă.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Vectorul în C++ clasic (arrays) are dimensiune fixă.'
     },
     {
@@ -2011,7 +2011,7 @@ cout << (v[2] + v[5]) / 2;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot declara vectori de vectori (matrice) în C++.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'int matrix[3][3]; declară o matrice 3x3.'
     },
     {
@@ -2041,7 +2041,7 @@ for (int i = 0; i < 5; i++) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'Un vector al unui tip nu poate conține date de alt tip.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'int v[5] stochează doar întregi, nu și float-uri.'
     },
     {
@@ -2084,7 +2084,7 @@ for (int i = 0; i < 5; i++) {
         difficulty: 'easy',
         type: 'true-false',
         question: 'Două elemente din vector pot avea aceeași valoare.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'De exemplu: {1, 2, 2, 3} are 2 de două ori.'
     },
     {
@@ -2113,7 +2113,7 @@ float media = sum / (float) n;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Acceseaza v[10] pentru un vector de 5 elemente produce compilare fără eroare.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Compilatorul nu prinde erori de acces, doar la runtime apar probleme.'
     },
     {
@@ -2140,7 +2140,7 @@ float media = sum / (float) n;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Un vector poate fi gol (fără elemente).',
-        correctAnswer: 'false',
+        correctAnswer: 'Fals',
         explanation: 'Vectorii statici au dimensiune fixă mai mare sau egală cu 1.'
     },
     {
@@ -2169,7 +2169,7 @@ for (int i = 0; i < n; i++)
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pentru un vector v[5], indicii valizi sunt 0, 1, 2, 3, 4.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Indicii sunt întotdeauna de la 0 la dimensiune-1.'
     },
     {
@@ -2198,7 +2198,7 @@ cout << v[0] << " " << v[3] << " " << v[5];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'sizeof(v) / sizeof(v[0]) dă dimensiunea unui vector declarat.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Aceasta funcționează pentru vectori declarați direct în scopul curent.'
     },
     {
@@ -2241,7 +2241,7 @@ cout << v[0] << " " << v[3] << " " << v[5];`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot stoca obiecte complexe în vectori (nu doar numere).',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Se pot stoca structuri, clase, etc.'
     },
     {
@@ -2272,7 +2272,7 @@ cout << max_val;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Vectorii și array-urile sunt sinonime în C++.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Termenii sunt folosiți în mod interschimbabil pentru array-urile statice.'
     },
     {
@@ -2298,7 +2298,7 @@ cout << max_val;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'Pot transmite un vector unei funcții.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Se transmit prin pointer sau referință.'
     },
     {
@@ -2324,7 +2324,7 @@ cout << max_val;`,
         difficulty: 'easy',
         type: 'true-false',
         question: 'O buclă for este cea mai bună modalitate de a itera printr-un vector.',
-        correctAnswer: 'true',
+        correctAnswer: 'Adevărat',
         explanation: 'Buclele for sunt ideale pentru iterare secvențială.'
     },
 ];

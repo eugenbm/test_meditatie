@@ -128,6 +128,9 @@ export default class App {
         if (isCorrect) {
             this.score += 1;
         }
+
+        // 📊 Salvează în Spaced Repetition
+        this.saveQuestionHistory(question.id, isCorrect, answer);
         
         // Salvează răspunsul și întrebarea pentru afișarea feedback-ului
         this.lastAnswer = answer;
@@ -202,6 +205,126 @@ export default class App {
                 : 0
         };
     }
+
+    /**
+     * ===== SPACED REPETITION SYSTEM =====
+     */
+
+    /**
+     * Salvează istoric răspuns pentru Spaced Repetition
+     */
+    saveQuestionHistory(questionId, wasCorrect, userAnswer) {
+        const sr = JSON.parse(localStorage.getItem('spacedRepetition') || '{}');
+        
+        if (!sr[questionId]) {
+            sr[questionId] = {
+                id: questionId,
+                attempts: 0,
+                correct: 0,
+                incorrect: 0,
+                lastAnswered: null,
+                nextReview: null,
+                interval: 1 // zile
+            };
+        }
+
+        // Update counters
+        sr[questionId].attempts++;
+        if (wasCorrect) {
+            sr[questionId].correct++;
+        } else {
+            sr[questionId].incorrect++;
+        }
+        sr[questionId].lastAnswered = new Date().toISOString();
+
+        // Calculează următoarea review date
+        if (wasCorrect && sr[questionId].correct % 3 === 0) {
+            // După 3 răspunsuri corecte consecutive, crește interval
+            if (sr[questionId].interval === 1) {
+                sr[questionId].interval = 3; // 3 zile
+            } else if (sr[questionId].interval === 3) {
+                sr[questionId].interval = 7; // 7 zile
+            }
+        } else if (!wasCorrect) {
+            // Reset interval la 1 zi dacă greșit
+            sr[questionId].interval = 1;
+        }
+
+        // Setează următoarea review date
+        const nextDate = new Date();
+        nextDate.setDate(nextDate.getDate() + sr[questionId].interval);
+        sr[questionId].nextReview = nextDate.toISOString();
+
+        localStorage.setItem('spacedRepetition', JSON.stringify(sr));
+    }
+
+    /**
+     * Obține întrebări care trebuie reviewate azi
+     */
+    getReviewQuestions(languageKey) {
+        const sr = JSON.parse(localStorage.getItem('spacedRepetition') || '{}');
+        const languageData = this.languages[languageKey].data;
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        const reviewIds = Object.keys(sr).filter(qId => {
+            const item = sr[qId];
+            if (!item.nextReview) return false;
+            
+            const reviewDate = new Date(item.nextReview);
+            reviewDate.setHours(0, 0, 0, 0);
+            
+            return reviewDate <= today;
+        });
+
+        // Returnează întrebările de review
+        return reviewIds
+            .map(qId => languageData.find(q => q.id === qId))
+            .filter(q => q); // Remove undefined
+    }
+
+    /**
+     * Obține statistici SR per întrebare
+     */
+    getQuestionStats(questionId) {
+        const sr = JSON.parse(localStorage.getItem('spacedRepetition') || '{}');
+        return sr[questionId] || null;
+    }
+
+    /**
+     * Obține summary SR
+     */
+    getSpacedRepetitionSummary() {
+        const sr = JSON.parse(localStorage.getItem('spacedRepetition') || '{}');
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        let needsReview = 0;
+        let totalReviewed = 0;
+        let masteredCount = 0; // 7+ zile interval
+
+        Object.values(sr).forEach(item => {
+            totalReviewed++;
+            
+            if (item.nextReview) {
+                const reviewDate = new Date(item.nextReview);
+                reviewDate.setHours(0, 0, 0, 0);
+                if (reviewDate <= today) {
+                    needsReview++;
+                }
+            }
+
+            if (item.interval >= 7) {
+                masteredCount++;
+            }
+        });
+
+        return {
+            totalReviewed,
+            needsReview,
+            masteredCount
+        };
+    }
     
     /**
      * Restartează testul
@@ -236,7 +359,8 @@ export default class App {
         html += '<div class="main-content">';
         
         if (this.state === 'home') {
-            html += renderHome(this.languages, this.getStats());
+            const srSummary = this.getSpacedRepetitionSummary();
+            html += renderHome(this.languages, this.getStats(), srSummary);
         } else if (this.state === 'quiz') {
             html += renderQuiz(
                 this.getCurrentQuestion(),
@@ -323,12 +447,22 @@ export default class App {
      * Event listeners pentru home screen
      */
     attachHomeEventListeners() {
+        // Butoane limbaj
         document.querySelectorAll('[data-language]').forEach(btn => {
             btn.addEventListener('click', () => {
                 const language = btn.dataset.language;
                 this.selectLanguage(language);
             });
         });
+
+        // Button "Începe Review" pentru Spaced Repetition
+        const reviewBtn = document.querySelector('[data-action="start-review"]');
+        if (reviewBtn) {
+            reviewBtn.addEventListener('click', () => {
+                // TODO: Implementare quiz de review
+                alert('Review feature coming soon!');
+            });
+        }
     }
     
     /**
